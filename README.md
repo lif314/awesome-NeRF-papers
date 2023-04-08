@@ -372,7 +372,7 @@
 - 题目：JAWS：只是神经辐射场中电影传输的疯狂镜头
 - 分类：电影剪辑
 - Project: https://www.lix.polytechnique.fr/vista/projects/2023_cvpr_wang/
-- Code: https://github.com/robincourant/jaws, no
+- Code: https://github.com/robincourant/jaws
 - Paper: https://arxiv.org/pdf/2303.15427.pdf
 - 摘要： 
 
