@@ -38,7 +38,7 @@
 
 [2] SCADE: NeRFs from Space Carving with Ambiguity-Aware Depth Estimates
 
-- 题目：SCADE：来自具有歧义感知深度估计的空间雕刻的 NeRF
+- 题目：SCADE：来自具有歧义感知深度估计的空间雕刻的NeRF
 - 分类：深度监督
 - Project: https://scade-spacecarving-nerfs.github.io/
 - Code: soon
@@ -180,7 +180,7 @@
 
 - 题目：使用Lipschitz网络转换辐射场以实现逼真的3D场景风格化
 - 分类：逼真3D风格迁移
-- Code: no
+- Code: none
 - Paper: https://arxiv.org/pdf/2303.13232.pdf
 - 摘要： 
 
@@ -305,7 +305,7 @@
 - 题目：FlexNeRF：从稀疏视图中移动人体的逼真自由视点渲染
 - 分类：人物动态场景
 - Project: https://flex-nerf.github.io/
-- Code: no
+- Code: none
 - Paper: https://arxiv.org/pdf/2303.14368.pdf
 - 摘要： 
 
@@ -351,7 +351,7 @@
 - 题目：DiffRF：渲染引导的3D辐射场扩散
 - 分类：扩散模型
 - Project: https://sirwyver.github.io/DiffRF/
-- Code: no
+- Code: none
 - Paper: https://arxiv.org/pdf/2212.01206.pdf
 - 摘要： 
 
@@ -395,7 +395,7 @@
 - 题目：Magic3D：高分辨率文本到3D内容创建
 - 分类：Text-to-3D
 - Project: https://research.nvidia.com/labs/dir/magic3d/
-- Code: no
+- Code: none
 - Paper: https://arxiv.org/pdf/2211.10440.pdf
 - 摘要： 
 
@@ -1039,7 +1039,7 @@
 [48] NeRF-Gaze: A Head-Eye Redirection Parametric Model for Gaze Estimation
 
 - 题目：NeRF-Gaze： 一个用于凝视估计的头眼重定向参数模型
-- 分类：人脸建模
+- 分类：人脸建模,视线重定向
 - Project: none
 - Code: none
 - Paper: https://arxiv.org/pdf/2212.14710.pdf
@@ -1109,18 +1109,47 @@
 
 ----
 
-[51] 
+[51] MonoHuman: Animatable Human Neural Field from Monocular Video
 
-- 题目：
-- 分类：
-- Project: 
-- Code: 
-- Paper: 
+- 题目：MonoHuman：来自单目视频的可动画人类神经场
+- 分类：人体建模,文本交互
+- Project: https://yzmblog.github.io/projects/MonoHuman/
+- Code: https://github.com/Yzmblog/MonoHuman
+- Paper: https://arxiv.org/pdf/2304.02001.pdf
 - 摘要： 
 
-> 
+> *Animating virtual avatars with free-view control is crucial for various applications like virtual reality and digital entertainment. Previous studies have attempted to utilize the representation power of the neural radiance field (NeRF) to reconstruct the human body from monocular videos. Recent works propose to graft a deformation network into the NeRF to further model the dynamics of the human neural field for animating vivid human motions. However, such pipelines either rely on pose-dependent representations or fall short of motion coherency due to frame-independent optimization, making it difficult to generalize to unseen pose sequences realistically. In this paper, we propose a novel framework MonoHuman, which robustly renders view-consistent and high-fidelity avatars under arbitrary novel poses. Our key insight is to model the deformation field with bi-directional constraints and explicitly leverage the off-the-peg keyframe information to reason the feature correlations for coherent results. Specifically, we first propose a Shared Bidirectional Deformation module, which creates a pose-independent generalizable deformation field by disentangling backward and forward deformation correspondences into shared skeletal motion weight and separate non-rigid motions. Then, we devise a Forward Correspondence Search module, which queries the correspondence feature of keyframes to guide the rendering network. The rendered results are thus multi-view consistent with high fidelity, even under challenging novel pose settings. Extensive experiments demonstrate the superiority of our proposed MonoHuman over state-of-the-art methods.*
 
 - 图示：
+
+![image-20230408133743262](images/image-20230408133743262.png)
+
+![image-20230408133954523](images/image-20230408133954523.png)
+
+![image-20230408134021511](images/image-20230408134021511.png)
+
+
+
+
+
+----
+
+[52] NeRF-Supervised Deep Stereo
+
+- 题目：NeRF监督的深度立体网络
+- 分类：立体深度
+- Project: https://nerfstereo.github.io/
+- Code: https://github.com/fabiotosi92/NeRF-Supervised-Deep-Stereo
+- Paper: https://arxiv.org/pdf/2303.17603.pdf
+- 摘要： 
+
+> *We introduce a novel framework for training deep stereo networks effortlessly and without any ground-truth. By leveraging state-of-the-art neural rendering solutions, we generate stereo training data from image sequences collected with a single handheld camera. On top of them, a NeRF-supervised training procedure is carried out, from which we exploit rendered stereo triplets to compensate for occlusions and depth maps as proxy labels. This results in stereo networks capable of predicting sharp and detailed disparity maps. Experimental results show that models trained under this regime yield a 30-40% improvement over existing self-supervised methods on the challenging Middlebury dataset, filling the gap to supervised models and, most times, outperforming them at zero-shot generalization.*
+
+- 图示：
+
+![image-20230408140743510](images/image-20230408140743510.png)
+
+![image-20230408140820929](images/image-20230408140820929.png)
 
 
 
@@ -1132,18 +1161,93 @@
 
 ----
 
-[52] 
+[53] Enhanced Stable View Synthesis
 
-- 题目：
-- 分类：
-- Project: 
-- Code: 
-- Paper: 
+- 题目：增强的稳定视图合成
+- 分类：视图合成
+- Project: none
+- Code: none
+- Paper: https://arxiv.org/pdf/2303.17094.pdf
 - 摘要： 
 
-> 
+> *We introduce an approach to enhance the novel view synthesis from images taken from a freely moving camera. The introduced approach focuses on outdoor scenes where recovering accurate geometric scaffold and camera pose is challenging, leading to inferior results using the state-of-the-art stable view synthesis (SVS) method. SVS and related methods fail for outdoor scenes primarily due to (i) over-relying on the multiview stereo (MVS) for geometric scaffold recovery and (ii) assuming COLMAP computed camera poses as the best possible estimates, despite it being well-studied that MVS 3D reconstruction accuracy is limited to scene disparity and camera-pose accuracy is sensitive to key-point correspondence selection. This work proposes a principled way to enhance novel view synthesis solutions drawing inspiration from the basics of multiple view geometry. By leveraging the complementary behavior of MVS and monocular depth, we arrive at a better scene depth per view for nearby and far points, respectively. Moreover, our approach jointly refines camera poses with image-based rendering via multiple rotation averaging graph optimization. The recovered scene depth and the camera-pose help better view-dependent on-surface feature aggregation of the entire scene. Extensive evaluation of our approach on the popular benchmark dataset, such as Tanks and Temples, shows substantial improvement in view synthesis results compared to the prior art. For instance, our method shows 1.5 dB of PSNR improvement on the Tank and Temples. Similar statistics are observed when tested on other benchmark datasets such as FVS, Mip-NeRF 360, and DTU.*
 
 - 图示：
+
+![image-20230408141309066](images/image-20230408141309066.png)
+
+![image-20230408141506101](images/image-20230408141506101.png)
+
+
+
+
+
+----
+
+[54] $F^2$-NeRF: Fast Neural Radiance Field Training with Free Camera Trajectories
+
+- 题目：F2-NeRF：使用自由相机轨迹进行快速神经辐射场训练
+- 分类：任意相机路径,快速
+- Project: https://totoro97.github.io/projects/f2-nerf/
+- Code: https://github.com/totoro97/f2-nerf, soon
+- Paper: https://arxiv.org/pdf/2303.15951.pdf
+- 摘要： 
+
+> *This paper presents a novel grid-based NeRF called F2-NeRF (Fast-Free-NeRF) for novel view synthesis, which enables arbitrary input camera trajectories and only costs a few minutes for training. Existing fast grid-based NeRF training frameworks, like Instant-NGP, Plenoxels, DVGO, or TensoRF, are mainly designed for bounded scenes and rely on space warping to handle unbounded scenes. Existing two widely-used space-warping methods are only designed for the forward-facing trajectory or the 360-degree object-centric trajectory but cannot process arbitrary trajectories. In this paper, we delve deep into the mechanism of space warping to handle unbounded scenes. Based on our analysis, we further propose a novel space-warping method called perspective warping, which allows us to handle arbitrary trajectories in the grid-based NeRF framework. Extensive experiments demonstrate that F2-NeRF is able to use the same perspective warping to render high-quality images on two standard datasets and a new free trajectory dataset collected by us. Project page: [this https URL](https://totoro97.github.io/projects/f2-nerf).*
+
+- 图示：
+
+![image-20230408141733541](images/image-20230408141733541.png)
+
+![image-20230408141838445](images/image-20230408141838445.png)
+
+
+
+
+
+----
+
+[55] Frequency-Modulated Point Cloud Rendering with Easy Editing
+
+- 题目：易于编辑的调频点云渲染
+- 分类：可编辑,点云渲染,实时
+- Project: none
+- Code: https://github.com/yizhangphd/FreqPCR
+- Paper: https://arxiv.org/pdf/2303.07596.pdf
+- 摘要： 
+
+> *We develop an effective point cloud rendering pipeline for novel view synthesis, which enables high fidelity local detail reconstruction, real-time rendering and user-friendly editing. In the heart of our pipeline is an adaptive frequency modulation module called Adaptive Frequency Net (AFNet), which utilizes a hypernetwork to learn the local texture frequency encoding that is consecutively injected into adaptive frequency activation layers to modulate the implicit radiance signal. This mechanism improves the frequency expressive ability of the network with richer frequency basis support, only at a small computational budget. To further boost performance, a preprocessing module is also proposed for point cloud geometry optimization via point opacity estimation. In contrast to implicit rendering, our pipeline supports high-fidelity interactive editing based on point cloud manipulation. Extensive experimental results on NeRF-Synthetic, ScanNet, DTU and Tanks and Temples datasets demonstrate the superior performances achieved by our method in terms of PSNR, SSIM and LPIPS, in comparison to the state-of-the-art.*
+
+- 图示：
+
+![image-20230408142910228](images/image-20230408142910228.png)
+
+![image-20230408143054303](images/image-20230408143054303.png)
+
+
+
+
+
+
+
+----
+
+[56] FreeNeRF: Improving Few-shot Neural Rendering with Free Frequency Regularization
+
+- 题目：FreeNeRF：使用自由频率正则化改进小样本神经渲染
+- 分类：稀疏视图
+- Project: https://jiawei-yang.github.io/FreeNeRF/
+- Code: https://github.com/Jiawei-Yang/FreeNeRF
+- Paper: https://arxiv.org/pdf/2303.07418.pdf
+- 摘要： 
+
+> *Novel view synthesis with sparse inputs is a challenging problem for neural radiance fields (NeRF). Recent efforts alleviate this challenge by introducing external supervision, such as pre-trained models and extra depth signals, and by non-trivial patch-based rendering. In this paper, we present Frequency regularized NeRF (FreeNeRF), a surprisingly simple baseline that outperforms previous methods with minimal modifications to the plain NeRF. We analyze the key challenges in few-shot neural rendering and find that frequency plays an important role in NeRF's training. Based on the analysis, we propose two regularization terms. One is to regularize the frequency range of NeRF's inputs, while the other is to penalize the near-camera density fields. Both techniques are ``free lunches'' at no additional computational cost. We demonstrate that even with one line of code change, the original NeRF can achieve similar performance as other complicated methods in the few-shot setting. FreeNeRF achieves state-of-the-art performance across diverse datasets, including Blender, DTU, and LLFF. We hope this simple baseline will motivate a rethinking of the fundamental role of frequency in NeRF's training under the low-data regime and beyond.*
+
+- 图示：
+
+![image-20230408144005073](images/image-20230408144005073.png)
+
+
 
 
 
@@ -1155,20 +1259,45 @@
 
 ----
 
-[53] 
+[57] GazeNeRF: 3D-Aware Gaze Redirection with Neural Radiance Fields
 
-- 题目：
-- 分类：
-- Project: 
-- Code: 
-- Paper: 
+- 题目：GazeNeRF：具有神经辐射场的3D感知注视重定向
+- 分类：Gaze redirection 视线重定向
+- Project: none
+- Code: https://github.com/AlessandroRuzzi/GazeNeRF, soon
+- Paper: https://arxiv.org/pdf/2212.04823.pdf
 - 摘要： 
 
-> 
+> *We propose GazeNeRF, a 3D-aware method for the task of gaze redirection. Existing gaze redirection methods operate on 2D images and struggle to generate 3D consistent results. Instead, we build on the intuition that the face region and eyeballs are separate 3D structures that move in a coordinated yet independent fashion. Our method leverages recent advancements in conditional image-based neural radiance fields and proposes a two-stream architecture that predicts volumetric features for the face and eye regions separately. Rigidly transforming the eye features via a 3D rotation matrix provides fine-grained control over the desired gaze angle. The final, redirected image is then attained via differentiable volume compositing. Our experiments show that this architecture outperforms naively conditioned NeRF baselines as well as previous state-of-the-art 2D gaze redirection methods in terms of redirection accuracy and identity preservation.*
 
 - 图示：
 
+![image-20230408143757315](images/image-20230408143757315.png)
 
+![image-20230408143816889](images/image-20230408143816889.png)
+
+
+
+
+
+----
+
+[58] EditableNeRF: Editing Topologically Varying Neural Radiance Fields by Key Points
+
+- 题目：EditableNeRF：按关键点编辑拓扑变化的神经辐射场
+- 分类：可编辑
+- Project: https://chengwei-zheng.github.io/EditableNeRF/
+- Code: soon
+- Paper: https://arxiv.org/pdf/2212.04247.pdf
+- 摘要： 
+
+> *Neural radiance fields (NeRF) achieve highly photo-realistic novel-view synthesis, but it's a challenging problem to edit the scenes modeled by NeRF-based methods, especially for dynamic scenes. We propose editable neural radiance fields that enable end-users to easily edit dynamic scenes and even support topological changes. Input with an image sequence from a single camera, our network is trained fully automatically and models topologically varying dynamics using our picked-out surface key points. Then end-users can edit the scene by easily dragging the key points to desired new positions. To achieve this, we propose a scene analysis method to detect and initialize key points by considering the dynamics in the scene, and a weighted key points strategy to model topologically varying dynamics by joint key points and weights optimization. Our method supports intuitive multi-dimensional (up to 3D) editing and can generate novel scenes that are unseen in the input sequence. Experiments demonstrate that our method achieves high-quality editing on various dynamic scenes and outperforms the state-of-the-art. Our code and captured data are available at [this https URL](https://chengwei-zheng.github.io/EditableNeRF/).*
+
+- 图示：
+
+![image-20230408144115355](images/image-20230408144115355.png)
+
+![image-20230408144214361](images/image-20230408144214361.png)
 
 
 
@@ -1178,22 +1307,22 @@
 
 ----
 
-[54] 
+[59] Unsupervised Continual Semantic Adaptation through Neural Rendering
 
-- 题目：
-- 分类：
-- Project: 
-- Code: 
-- Paper: 
+- 题目：通过神经渲染的无监督连续语义适应
+- 分类：语义分割
+- Project: none
+- Code: none
+- Paper: https://arxiv.org/pdf/2211.13969.pdf
 - 摘要： 
 
-> 
+> *An increasing amount of applications rely on data-driven models that are deployed for perception tasks across a sequence of scenes. Due to the mismatch between training and deployment data, adapting the model on the new scenes is often crucial to obtain good performance. In this work, we study continual multi-scene adaptation for the task of semantic segmentation, assuming that no ground-truth labels are available during deployment and that performance on the previous scenes should be maintained. We propose training a Semantic-NeRF network for each scene by fusing the predictions of a segmentation model and then using the view-consistent rendered semantic labels as pseudo-labels to adapt the model. Through joint training with the segmentation model, the Semantic-NeRF model effectively enables 2D-3D knowledge transfer. Furthermore, due to its compact size, it can be stored in a long-term memory and subsequently used to render data from arbitrary viewpoints to reduce forgetting. We evaluate our approach on ScanNet, where we outperform both a voxel-based baseline and a state-of-the-art unsupervised domain adaptation method.*
 
 - 图示：
 
+![image-20230408144945434](images/image-20230408144945434.png)
 
-
-
+![image-20230408145010600](images/image-20230408145010600.png)
 
 
 
@@ -1201,123 +1330,22 @@
 
 ----
 
-[55] 
+[60] ESLAM: Efficient Dense SLAM System Based on Hybrid Representation of Signed Distance Fields
 
-- 题目：
-- 分类：
-- Project: 
-- Code: 
-- Paper: 
+- 题目：ESLAM：基于符号距离场混合表示的高效密集SLAM系统
+- 分类：混合表达SDF,高效密集SLAM
+- Project: https://www.idiap.ch/paper/eslam/
+- Code: https://github.com/idiap/ESLAM, soon
+- Paper: https://arxiv.org/pdf/2211.11704.pdf
 - 摘要： 
 
-> 
+> *We present ESLAM, an efficient implicit neural representation method for Simultaneous Localization and Mapping (SLAM). ESLAM reads RGB-D frames with unknown camera poses in a sequential manner and incrementally reconstructs the scene representation while estimating the current camera position in the scene. We incorporate the latest advances in Neural Radiance Fields (NeRF) into a SLAM system, resulting in an efficient and accurate dense visual SLAM method. Our scene representation consists of multi-scale axis-aligned perpendicular feature planes and shallow decoders that, for each point in the continuous space, decode the interpolated features into Truncated Signed Distance Field (TSDF) and RGB values. Our extensive experiments on three standard datasets, Replica, ScanNet, and TUM RGB-D show that ESLAM improves the accuracy of 3D reconstruction and camera localization of state-of-the-art dense visual SLAM methods by more than 50%, while it runs up to 10 times faster and does not require any pre-training.*
 
 - 图示：
 
+![image-20230408145333684](images/image-20230408145333684.png)
 
-
-
-
-
-
-----
-
-[56] 
-
-- 题目：
-- 分类：
-- Project: 
-- Code: 
-- Paper: 
-- 摘要： 
-
-> 
-
-- 图示：
-
-
-
-
-
-
-
-----
-
-[57] 
-
-- 题目：
-- 分类：
-- Project: 
-- Code: 
-- Paper: 
-- 摘要： 
-
-> 
-
-- 图示：
-
-
-
-
-
-
-
-----
-
-[58] 
-
-- 题目：
-- 分类：
-- Project: 
-- Code: 
-- Paper: 
-- 摘要： 
-
-> 
-
-- 图示：
-
-
-
-
-
-
-
-----
-
-[59] 
-
-- 题目：
-- 分类：
-- Project: 
-- Code: 
-- Paper: 
-- 摘要： 
-
-> 
-
-- 图示：
-
-
-
-
-
-----
-
-[60] 
-
-- 题目：
-- 分类：
-- Project: 
-- Code: 
-- Paper: 
-- 摘要： 
-
-> 
-
-- 图示：
-
-
+![image-20230408145412384](images/image-20230408145412384.png)
 
 
 
