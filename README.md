@@ -7,6 +7,8 @@
 
 
 
+---
+
 [1] NeRF-RPN: A general framework for object detection in NeRFs
 
 - 题目：NeRF-RPN：NeRF中对象检测的通用框架
@@ -30,7 +32,7 @@
 
 
 
-
+---
 
 [2] SCADE: NeRFs from Space Carving with Ambiguity-Aware Depth Estimates
 
@@ -51,7 +53,7 @@
 
 
 
-
+---
 
 [3] 3D-Aware Multi-Class Image-to-Image Translation with NeRFs
 
@@ -71,7 +73,7 @@
 
 
 
-
+---
 
 [4] StyleRF: Zero-shot 3D Style Transfer of Neural Radiance Fields
 
@@ -90,7 +92,7 @@
 
 
 
-
+---
 
 [5] NeuFace: Realistic 3D Neural Face Rendering from Multi-view Images
 
@@ -108,7 +110,7 @@
 
 
 
-
+---
 
 [6] BundleSDF: Neural 6-DoF Tracking and 3D Reconstruction of Unknown Objects
 
@@ -131,7 +133,7 @@
 
 
 
-
+---
 
 [7] Seeing Through the Glass: Neural 3D Reconstruction of Object Inside a Transparent Container
 
@@ -149,7 +151,7 @@
 
 
 
-
+---
 
 [8] HexPlane: A Fast Representation for Dynamic Scenes
 
@@ -170,7 +172,7 @@
 
 
 
-
+---
 
 [9] Transforming Radiance Field with Lipschitz Network for Photorealistic 3D Scene Stylization
 
@@ -188,7 +190,7 @@
 
 
 
-
+---
 
 [10] PartNeRF: Generating Part-Aware Editable 3D Shapes without 3D Supervision
 
@@ -209,7 +211,7 @@
 
 
 
-
+---
 
 [11] Masked Wavelet Representation for Compact Neural Radiance Fields
 
@@ -232,7 +234,7 @@
 
 
 
-
+---
 
 [12] Shape, Pose, and Appearance from a Single Image via Bootstrapped Radiance Field Inversion
 
@@ -252,7 +254,7 @@
 
 
 
-
+---
 
 [13] NEF: Neural Edge Fields for 3D Parametric Curve Reconstruction from Multi-view Images
 
@@ -271,7 +273,7 @@
 
 
 
-
+---
 
 [14] NeuDA: Neural Deformable Anchor for High-Fidelity Implicit Surface Reconstruction
 
@@ -294,7 +296,7 @@
 
 
 
-
+---
 
 [15] FlexNeRF: Photorealistic Free-viewpoint Rendering of Moving Humans from Sparse Views
 
@@ -317,7 +319,7 @@
 
 
 
-
+---
 
 [16] DyLiN: Making Light Field Networks Dynamic
 
@@ -340,7 +342,7 @@
 
 
 
-
+---
 
 [17] DiffRF: Rendering-Guided 3D Radiance Field Diffusion
 
@@ -361,6 +363,10 @@
 
 
 
+
+
+---
+
 [18] JAWS: Just A Wild Shot for Cinematic Transfer in Neural Radiance Fields
 
 - 题目：JAWS：只是神经辐射场中电影传输的疯狂镜头
@@ -380,7 +386,7 @@
 
 
 
-
+---
 
 [19] Magic3D: High-Resolution Text-to-3D Content Creation
 
@@ -399,7 +405,7 @@
 
 
 
-
+---
 
 [20] SUDS: Scalable Urban Dynamic Scenes
 
@@ -420,7 +426,7 @@
 
 
 
-
+---
 
 [21] NeRF-DS: Neural Radiance Fields for Dynamic Specular Objects
 
@@ -442,7 +448,7 @@
 
 
 
-
+---
 
 [22] Ref-NPR: Reference-Based Non-Photorealistic Radiance Fields for Controllable Scene Stylization
 
@@ -462,6 +468,10 @@
 ![image-20230408001454132](images/image-20230408001454132.png)
 
 
+
+
+
+---
 
 [23] Interactive Segmentation of Radiance Fields
 
@@ -483,12 +493,625 @@
 
 
 
+---
+
+[24] GM-NeRF: Learning Generalizable Model-based Neural Radiance Fields from Multi-view Images
+
+- 题目：GM-NeRF：从多视图图像中学习可泛化的基于模型的神经辐射场
+- 分类：人体重建
+- Code: https://github.com/JanaldoChen/GM-NeRF, soon
+- Paper: https://arxiv.org/pdf/2303.13777.pdf
+- 摘要： 
+
+> *In this work, we focus on synthesizing high-fidelity novel view images for arbitrary human performers, given a set of sparse multi-view images. It is a challenging task due to the large variation among articulated body poses and heavy self-occlusions. To alleviate this, we introduce an effective generalizable framework Generalizable Model-based Neural Radiance Fields (GM-NeRF) to synthesize free-viewpoint images. Specifically, we propose a geometry-guided attention mechanism to register the appearance code from multi-view 2D images to a geometry proxy which can alleviate the misalignment between inaccurate geometry prior and pixel space. On top of that, we further conduct neural rendering and partial gradient backpropagation for efficient perceptual supervision and improvement of the perceptual quality of synthesis. To evaluate our method, we conduct experiments on synthesized datasets THuman2.0 and Multi-garment, and real-world datasets Genebody and ZJUMocap. The results demonstrate that our approach outperforms state-of-the-art methods in terms of novel view synthesis and geometric reconstruction.*
+
+- 图示：
+
+![image-20230408090806823](images/image-20230408090806823.png)
 
 
-[24] 
+
+---
+
+[25] Progressively Optimized Local Radiance Fields for Robust View Synthesis
+
+- 题目：渐进优化的局部辐射场，用于稳健的视图合成
+- 分类：增量重建，联合估计位姿，室内室外
+- Project: https://localrf.github.io/
+- Code: https://github.com/facebookresearch/localrf, soon
+- Paper: https://arxiv.org/pdf/2303.13791.pdf
+- 摘要： 
+
+> *We present an algorithm for reconstructing the radiance field of a large-scale scene from a single casually captured video. The task poses two core challenges. First, most existing radiance field reconstruction approaches rely on accurate pre-estimated camera poses from Structure-from-Motion algorithms, which frequently fail on in-the-wild videos. Second, using a single, global radiance field with finite representational capacity does not scale to longer trajectories in an unbounded scene. For handling unknown poses, we jointly estimate the camera poses with radiance field in a progressive manner. We show that progressive optimization significantly improves the robustness of the reconstruction. For handling large unbounded scenes, we dynamically allocate new local radiance fields trained with frames within a temporal window. This further improves robustness (e.g., performs well even under moderate pose drifts) and allows us to scale to large scenes. Our extensive evaluation on the Tanks and Temples dataset and our collected outdoor dataset, Static Hikes, show that our approach compares favorably with the state-of-the-art.*
+
+- 图示：
+
+![image-20230408091838380](images/image-20230408091838380.png)
+
+
+
+---
+
+[26] ABLE-NeRF: Attention-Based Rendering with Learnable Embeddings for Neural Radiance Field
+
+- 题目：ABLE-NeRF：基于注意力的神经辐射场可学习嵌入渲染
+- 分类：注意力机制
+- Code: https://github.com/TangZJ/able-nerf
+- Paper: https://arxiv.org/pdf/2303.13817.pdf
+- 摘要： 
+
+> *Neural Radiance Field (NeRF) is a popular method in representing 3D scenes by optimising a continuous volumetric scene function. Its large success which lies in applying volumetric rendering (VR) is also its Achilles' heel in producing view-dependent effects. As a consequence, glossy and transparent surfaces often appear murky. A remedy to reduce these artefacts is to constrain this VR equation by excluding volumes with back-facing normal. While this approach has some success in rendering glossy surfaces, translucent objects are still poorly represented. In this paper, we present an alternative to the physics-based VR approach by introducing a self-attention-based framework on volumes along a ray. In addition, inspired by modern game engines which utilise Light Probes to store local lighting passing through the scene, we incorporate Learnable Embeddings to capture view dependent effects within the scene. Our method, which we call ABLE-NeRF, significantly reduces `blurry' glossy surfaces in rendering and produces realistic translucent surfaces which lack in prior art. In the Blender dataset, ABLE-NeRF achieves SOTA results and surpasses Ref-NeRF in all 3 image quality metrics PSNR, SSIM, LPIPS.*
+
+- 图示：
+
+![image-20230408091521391](images/image-20230408091521391.png)
+
+![image-20230408091641210](images/image-20230408091641210.png)
+
+
+
+
+
+---
+
+[27] SINE: Semantic-driven Image-based NeRF Editing with Prior-guided Editing Field
+
+- 题目：SINE：语义驱动的基于图像的NeRF编辑，具有先验引导编辑字段
+- 分类：可编辑
+- Project: https://zju3dv.github.io/sine/
+- Code: https://github.com/zju3dv/SINE, soon
+- Paper: https://arxiv.org/pdf/2303.13277.pdf
+- 摘要： 
+
+> *Despite the great success in 2D editing using user-friendly tools, such as Photoshop, semantic strokes, or even text prompts, similar capabilities in 3D areas are still limited, either relying on 3D modeling skills or allowing editing within only a few categories. In this paper, we present a novel semantic-driven NeRF editing approach, which enables users to edit a neural radiance field with a single image, and faithfully delivers edited novel views with high fidelity and multi-view consistency. To achieve this goal, we propose a prior-guided editing field to encode fine-grained geometric and texture editing in 3D space, and develop a series of techniques to aid the editing process, including cyclic constraints with a proxy mesh to facilitate geometric supervision, a color compositing mechanism to stabilize semantic-driven texture editing, and a feature-cluster-based regularization to preserve the irrelevant content unchanged. Extensive experiments and editing examples on both real-world and synthetic data demonstrate that our method achieves photo-realistic 3D editing using only a single edited image, pushing the bound of semantic-driven editing in 3D real-world scenes. Our project webpage: [this https URL](https://zju3dv.github.io/sine/).*
+
+- 图示：
+
+![image-20230408092647113](images/image-20230408092647113.png)
+
+![image-20230408092703991](images/image-20230408092703991.png)
+
+
+
+---
+
+[28] RUST: Latent Neural Scene Representations from Unposed Imagery
+
+- 题目：RUST：来自未处理图像的潜在神经场景表征
+- 分类：没有位姿 NeRF without pose
+- Project: https://rust-paper.github.io/
+- Code: none
+- Paper: https://arxiv.org/pdf/2211.14306.pdf
+- 摘要： 
+
+> *Inferring the structure of 3D scenes from 2D observations is a fundamental challenge in computer vision. Recently popularized approaches based on neural scene representations have achieved tremendous impact and have been applied across a variety of applications. One of the major remaining challenges in this space is training a single model which can provide latent representations which effectively generalize beyond a single scene. Scene Representation Transformer (SRT) has shown promise in this direction, but scaling it to a larger set of diverse scenes is challenging and necessitates accurately posed ground truth data. To address this problem, we propose RUST (Really Unposed Scene representation Transformer), a pose-free approach to novel view synthesis trained on RGB images alone. Our main insight is that one can train a Pose Encoder that peeks at the target image and learns a latent pose embedding which is used by the decoder for view synthesis. We perform an empirical investigation into the learned latent pose structure and show that it allows meaningful test-time camera transformations and accurate explicit pose readouts. Perhaps surprisingly, RUST achieves similar quality as methods which have access to perfect camera pose, thereby unlocking the potential for large-scale training of amortized neural scene representations.*
+
+- 图示：
+
+![image-20230408093356228](images/image-20230408093356228.png)
+
+
+
+
+
+---
+
+[29] SPARF: Neural Radiance Fields from Sparse and Noisy Poses
+
+- 题目：SPARF：来自稀疏和噪声位姿的神经辐射场
+- 分类：稀疏视图，位姿不准
+- Project: http://prunetruong.com/sparf.github.io/
+- Code: None
+- Paper: https://arxiv.org/pdf/2211.11738.pdf
+- 摘要： 
+
+> *Neural Radiance Field (NeRF) has recently emerged as a powerful representation to synthesize photorealistic novel views. While showing impressive performance, it relies on the availability of dense input views with highly accurate camera poses, thus limiting its application in real-world scenarios. In this work, we introduce Sparse Pose Adjusting Radiance Field (SPARF), to address the challenge of novel-view synthesis given only few wide-baseline input images (as low as 3) with noisy camera poses. Our approach exploits multi-view geometry constraints in order to jointly learn the NeRF and refine the camera poses. By relying on pixel matches extracted between the input views, our multi-view correspondence objective enforces the optimized scene and camera poses to converge to a global and geometrically accurate solution. Our depth consistency loss further encourages the reconstructed scene to be consistent from any viewpoint. Our approach sets a new state of the art in the sparse-view regime on multiple challenging datasets.*
+
+- 图示：
+
+![image-20230408093937538](images/image-20230408093937538.png)
+
+
+
+
+
+
+
+---
+
+[30] EventNeRF: Neural Radiance Fields from a Single Colour Event Camera
+
+- 题目：EventNeRF：单色事件相机的神经辐射场
+- 分类：事件相机
+- Project: https://4dqv.mpi-inf.mpg.de/EventNeRF/
+- Code: https://github.com/r00tman/EventNeRF
+- Paper: https://arxiv.org/pdf/2206.11896.pdf
+- 摘要： 
+
+> *Asynchronously operating event cameras find many applications due to their high dynamic range, vanishingly low motion blur, low latency and low data bandwidth. The field saw remarkable progress during the last few years, and existing event-based 3D reconstruction approaches recover sparse point clouds of the scene. However, such sparsity is a limiting factor in many cases, especially in computer vision and graphics, that has not been addressed satisfactorily so far. Accordingly, this paper proposes the first approach for 3D-consistent, dense and photorealistic novel view synthesis using just a single colour event stream as input. At its core is a neural radiance field trained entirely in a self-supervised manner from events while preserving the original resolution of the colour event channels. Next, our ray sampling strategy is tailored to events and allows for data-efficient training. At test, our method produces results in the RGB space at unprecedented quality. We evaluate our method qualitatively and numerically on several challenging synthetic and real scenes and show that it produces significantly denser and more visually appealing renderings than the existing methods. We also demonstrate robustness in challenging scenarios with fast motion and under low lighting conditions. We release the newly recorded dataset and our source code to facilitate the research field, see [this https URL](https://4dqv.mpi-inf.mpg.de/EventNeRF).*
+
+- 图示：
+
+![image-20230408093605953](images/image-20230408093605953.png)
+
+
+
+
+
+---
+
+[31] Grid-guided Neural Radiance Fields for Large Urban Scenes
+
+- 题目：基于网格引导的神经辐射场的大型城市场景重建
+- 分类：
+- Project: https://city-super.github.io/gridnerf/
+- Code: None
+- Paper: https://arxiv.org/pdf/2303.14001.pdf
+- 摘要： 
+
+> *Purely MLP-based neural radiance fields (NeRF-based methods) often suffer from underfitting with blurred renderings on large-scale scenes due to limited model capacity. Recent approaches propose to geographically divide the scene and adopt multiple sub-NeRFs to model each region individually, leading to linear scale-up in training costs and the number of sub-NeRFs as the scene expands. An alternative solution is to use a feature grid representation, which is computationally efficient and can naturally scale to a large scene with increased grid resolutions. However, the feature grid tends to be less constrained and often reaches suboptimal solutions, producing noisy artifacts in renderings, especially in regions with complex geometry and texture. In this work, we present a new framework that realizes high-fidelity rendering on large urban scenes while being computationally efficient. We propose to use a compact multiresolution ground feature plane representation to coarsely capture the scene, and complement it with positional encoding inputs through another NeRF branch for rendering in a joint learning fashion. We show that such an integration can utilize the advantages of two alternative solutions: a light-weighted NeRF is sufficient, under the guidance of the feature grid representation, to render photorealistic novel views with fine details; and the jointly optimized ground feature planes, can meanwhile gain further refinements, forming a more accurate and compact feature space and output much more natural rendering results.*
+
+- 图示：
+
+![image-20230408094732249](images/image-20230408094732249.png)
+
+
+
+![image-20230408094801158](images/image-20230408094801158.png)
+
+
+
+
+
+---
+
+[32] HandNeRF: Neural Radiance Fields for Animatable Interacting Hands
+
+- 题目：HandNeRF：可动画交互手的神经辐射场
+- 分类：手部重建
+- Code: none
+- Paper: https://arxiv.org/pdf/2303.13825.pdf
+- 摘要： 
+
+> *We propose a novel framework to reconstruct accurate appearance and geometry with neural radiance fields (NeRF) for interacting hands, enabling the rendering of photo-realistic images and videos for gesture animation from arbitrary views. Given multi-view images of a single hand or interacting hands, an off-the-shelf skeleton estimator is first employed to parameterize the hand poses. Then we design a pose-driven deformation field to establish correspondence from those different poses to a shared canonical space, where a pose-disentangled NeRF for one hand is optimized. Such unified modeling efficiently complements the geometry and texture cues in rarely-observed areas for both hands. Meanwhile, we further leverage the pose priors to generate pseudo depth maps as guidance for occlusion-aware density learning. Moreover, a neural feature distillation method is proposed to achieve cross-domain alignment for color optimization. We conduct extensive experiments to verify the merits of our proposed HandNeRF and report a series of state-of-the-art results both qualitatively and quantitatively on the large-scale InterHand2.6M dataset.*
+
+- 图示：
+
+![image-20230408095022311](images/image-20230408095022311.png)
+
+![image-20230408095048015](images/image-20230408095048015.png)
+
+
+
+---
+
+[33] Robust Dynamic Radiance Fields
+
+- 题目：鲁棒动态辐射场
+- 分类：动态场景
+- Code: https://robust-dynrf.github.io/, soon
+- Paper: https://robust-dynrf.github.io/
+- 摘要： 
+
+> *Dynamic radiance field reconstruction methods aim to model the time-varying structure and appearance of a dynamic scene. Existing methods, however, assume that accurate camera poses can be reliably estimated by Structure from Motion (SfM) algorithms. These methods, thus, are unreliable as SfM algorithms often fail or produce erroneous poses on challenging videos with highly dynamic objects, poorly textured surfaces, and rotating camera motion. We address this robustness issue by jointly estimating the static and dynamic radiance fields along with the camera parameters (poses and focal length). We demonstrate the robustness of our approach via extensive quantitative and qualitative experiments. Our results show favorable performance over the state-of-the-art dynamic view synthesis methods.*
+
+- 图示：
+
+![image-20230408095514853](images/image-20230408095514853.png)
+
+![image-20230408095633407](images/image-20230408095633407.png)
+
+
+
+
+
+
+
+---
+
+[34] MobileNeRF: Exploiting the Polygon Rasterization Pipeline for Efficient Neural Field Rendering on Mobile Architectures
+
+- 题目：MobileNeRF：利用多边形光栅化管线在移动架构上实现高效的神经场渲染
+- 分类：移动设备,快速渲染
+- Project: https://mobile-nerf.github.io/
+- Code: https://github.com/google-research/jax3d/tree/main/jax3d/projects/mobilenerf
+- Paper: https://arxiv.org/pdf/2208.00277.pdf
+- 摘要： 
+
+> *Neural Radiance Fields (NeRFs) have demonstrated amazing ability to synthesize images of 3D scenes from novel views. However, they rely upon specialized volumetric rendering algorithms based on ray marching that are mismatched to the capabilities of widely deployed graphics hardware. This paper introduces a new NeRF representation based on textured polygons that can synthesize novel images efficiently with standard rendering pipelines. The NeRF is represented as a set of polygons with textures representing binary opacities and feature vectors. Traditional rendering of the polygons with a z-buffer yields an image with features at every pixel, which are interpreted by a small, view-dependent MLP running in a fragment shader to produce a final pixel color. This approach enables NeRFs to be rendered with the traditional polygon rasterization pipeline, which provides massive pixel-level parallelism, achieving interactive frame rates on a wide range of compute platforms, including mobile phones.*
+
+- 图示：
+
+![image-20230408100235897](images/image-20230408100235897.png)
+
+![image-20230408100334747](images/image-20230408100334747.png)
+
+![image-20230408100401496](images/image-20230408100401496.png)
+
+
+
+
+
+---
+
+[35] Semantic Ray: Learning a Generalizable Semantic Field with Cross-Reprojection Attention
+
+- 题目：语义射线：学习具有交叉重投影注意的可泛化语义场
+- 分类：可泛化语义分割
+- Project: https://liuff19.github.io/S-Ray/
+- Code: https://github.com/liuff19/Semantic-Ray
+- Paper: https://arxiv.org/pdf/2303.13014.pdf
+- 摘要： 
+
+> *In this paper, we aim to learn a semantic radiance field from multiple scenes that is accurate, efficient and generalizable. While most existing NeRFs target at the tasks of neural scene rendering, image synthesis and multi-view reconstruction, there are a few attempts such as Semantic-NeRF that explore to learn high-level semantic understanding with the NeRF structure. However, Semantic-NeRF simultaneously learns color and semantic label from a single ray with multiple heads, where the single ray fails to provide rich semantic information. As a result, Semantic NeRF relies on positional encoding and needs to train one specific model for each scene. To address this, we propose Semantic Ray (S-Ray) to fully exploit semantic information along the ray direction from its multi-view reprojections. As directly performing dense attention over multi-view reprojected rays would suffer from heavy computational cost, we design a Cross-Reprojection Attention module with consecutive intra-view radial and cross-view sparse attentions, which decomposes contextual information along reprojected rays and cross multiple views and then collects dense connections by stacking the modules. Experiments show that our S-Ray is able to learn from multiple scenes, and it presents strong generalization ability to adapt to unseen scenes.*
+
+- 图示：
+
+![image-20230408100646447](images/image-20230408100646447.png)
+
+![image-20230408100710617](images/image-20230408100710617.png)
+
+![image-20230408100724155](images/image-20230408100724155.png)
+
+
+
+
+
+---
+
+[36] Balanced Spherical Grid for Egocentric View Synthesis
+
+- 题目：用于以自我为中心的视图合成的平衡球形网格
+- 分类：自拍VR
+- Project: https://changwoon.info/publications/EgoNeRF
+- Code: https://github.com/changwoonchoi/EgoNeRF
+- Paper: https://arxiv.org/pdf/2303.12408.pdf
+- 摘要： 
+
+> *We present EgoNeRF, a practical solution to reconstruct large-scale real-world environments for VR assets. Given a few seconds of casually captured 360 video, EgoNeRF can efficiently build neural radiance fields which enable high-quality rendering from novel viewpoints. Motivated by the recent acceleration of NeRF using feature grids, we adopt spherical coordinate instead of conventional Cartesian coordinate. Cartesian feature grid is inefficient to represent large-scale unbounded scenes because it has a spatially uniform resolution, regardless of distance from viewers. The spherical parameterization better aligns with the rays of egocentric images, and yet enables factorization for performance enhancement. However, the naïve spherical grid suffers from irregularities at two poles, and also cannot represent unbounded scenes. To avoid singularities near poles, we combine two balanced grids, which results in a quasi-uniform angular grid. We also partition the radial grid exponentially and place an environment map at infinity to represent unbounded scenes. Furthermore, with our resampling technique for grid-based methods, we can increase the number of valid samples to train NeRF volume. We extensively evaluate our method in our newly introduced synthetic and real-world egocentric 360 video datasets, and it consistently achieves state-of-the-art performance.*
+
+- 图示：
+
+![image-20230408101111807](images/image-20230408101111807.png)
+
+![image-20230408101211114](images/image-20230408101211114.png)
+
+
+
+
+
+---
+
+[37] ShadowNeuS: Neural SDF Reconstruction by Shadow Ray Supervision
+
+- 题目：ShadowNeuS： 通过阴影射线监督进行神经SDF重建
+- 分类：阴影射线监督
+- Project: https://gerwang.github.io/shadowneus/
+- Code: https://github.com/gerwang/ShadowNeuS, soon
+- Paper: https://arxiv.org/pdf/2211.14086.pdf
+- 摘要： 
+
+> *By supervising camera rays between a scene and multi-view image planes, NeRF reconstructs a neural scene representation for the task of novel view synthesis. On the other hand, shadow rays between the light source and the scene have yet to be considered. Therefore, we propose a novel shadow ray supervision scheme that optimizes both the samples along the ray and the ray location. By supervising shadow rays, we successfully reconstruct a neural SDF of the scene from single-view images under multiple lighting conditions. Given single-view binary shadows, we train a neural network to reconstruct a complete scene not limited by the camera's line of sight. By further modeling the correlation between the image colors and the shadow rays, our technique can also be effectively extended to RGB inputs. We compare our method with previous works on challenging tasks of shape reconstruction from single-view binary shadow or RGB images and observe significant improvements. The code and data are available at [this https URL](https://github.com/gerwang/ShadowNeuS).*
+
+- 图示：
+
+![image-20230408101421156](images/image-20230408101421156.png)
+
+![image-20230408101649183](images/image-20230408101649183.png)
+
+
+
+
+
+
+
+---
+
+[38] SPIn-NeRF: Multiview Segmentation and Perceptual Inpainting with Neural Radiance Fields
+
+- 题目：SPIn-NeRF：用神经辐射场进行多视角分割和知觉绘画
+- 分类：可编辑(三维绘画)，移除物体
+- Project: https://spinnerf3d.github.io/
+- Code: none
+- Paper: https://arxiv.org/pdf/2211.12254.pdf
+- 摘要： 
+
+> *Neural Radiance Fields (NeRFs) have emerged as a popular approach for novel view synthesis. While NeRFs are quickly being adapted for a wider set of applications, intuitively editing NeRF scenes is still an open challenge. One important editing task is the removal of unwanted objects from a 3D scene, such that the replaced region is visually plausible and consistent with its context. We refer to this task as 3D inpainting. In 3D, solutions must be both consistent across multiple views and geometrically valid. In this paper, we propose a novel 3D inpainting method that addresses these challenges. Given a small set of posed images and sparse annotations in a single input image, our framework first rapidly obtains a 3D segmentation mask for a target object. Using the mask, a perceptual optimizationbased approach is then introduced that leverages learned 2D image inpainters, distilling their information into 3D space, while ensuring view consistency. We also address the lack of a diverse benchmark for evaluating 3D scene inpainting methods by introducing a dataset comprised of challenging real-world scenes. In particular, our dataset contains views of the same scene with and without a target object, enabling more principled benchmarking of the 3D inpainting task. We first demonstrate the superiority of our approach on multiview segmentation, comparing to NeRFbased methods and 2D segmentation approaches. We then evaluate on the task of 3D inpainting, establishing state-ofthe-art performance against other NeRF manipulation algorithms, as well as a strong 2D image inpainter baseline. Project Page: [this https URL](https://spinnerf3d.github.io/)*
+
+- 图示：
+
+![image-20230408101944912](images/image-20230408101944912.png)
+
+![image-20230408102254293](images/image-20230408102254293.png)
+
+
+
+
+
+---
+
+[39] DP-NeRF: Deblurred Neural Radiance Field with Physical Scene Priors
+
+- 题目：DP-NeRF：带有物理场景先验的去模糊的神经辐射场
+- 分类：去模糊
+- Project: https://dogyoonlee.github.io/dpnerf/
+- Code: https://github.com/dogyoonlee/DP-NeRF
+- Paper: https://arxiv.org/pdf/2211.12046.pdf
+- 摘要： 
+
+> *Neural Radiance Field (NeRF) has exhibited outstanding three-dimensional (3D) reconstruction quality via the novel view synthesis from multi-view images and paired calibrated camera parameters. However, previous NeRF-based systems have been demonstrated under strictly controlled settings, with little attention paid to less ideal scenarios, including with the presence of noise such as exposure, illumination changes, and blur. In particular, though blur frequently occurs in real situations, NeRF that can handle blurred images has received little attention. The few studies that have investigated NeRF for blurred images have not considered geometric and appearance consistency in 3D space, which is one of the most important factors in 3D reconstruction. This leads to inconsistency and the degradation of the perceptual quality of the constructed scene. Hence, this paper proposes a DP-NeRF, a novel clean NeRF framework for blurred images, which is constrained with two physical priors. These priors are derived from the actual blurring process during image acquisition by the camera. DP-NeRF proposes rigid blurring kernel to impose 3D consistency utilizing the physical priors and adaptive weight proposal to refine the color composition error in consideration of the relationship between depth and blur. We present extensive experimental results for synthetic and real scenes with two types of blur: camera motion blur and defocus blur. The results demonstrate that DP-NeRF successfully improves the perceptual quality of the constructed NeRF ensuring 3D geometric and appearance consistency. We further demonstrate the effectiveness of our model with comprehensive ablation analysis.*
+
+- 图示：
+
+![image-20230408102555474](images/image-20230408102555474.png)
+
+![image-20230408102626048](images/image-20230408102626048.png)
+
+
+
+
+
+---
+
+[40] L2G-NeRF: Local-to-Global Registration for Bundle-Adjusting Neural Radiance Fields
+
+- 题目：L2G-NeRF: 捆绑调整的神经辐射场的局部到整体注册
+- 分类：Bundle-Adjusting
+- Project: https://rover-xingyu.github.io/L2G-NeRF/
+- Code: https://github.com/rover-xingyu/L2G-NeRF
+- Paper: https://arxiv.org/pdf/2211.11505.pdf
+- 摘要： 
+
+> *Neural Radiance Fields (NeRF) have achieved photorealistic novel views synthesis; however, the requirement of accurate camera poses limits its application. Despite analysis-by-synthesis extensions for jointly learning neural 3D representations and registering camera frames exist, they are susceptible to suboptimal solutions if poorly initialized. We propose L2G-NeRF, a Local-to-Global registration method for bundle-adjusting Neural Radiance Fields: first, a pixel-wise flexible alignment, followed by a frame-wise constrained parametric alignment. Pixel-wise local alignment is learned in an unsupervised way via a deep network which optimizes photometric reconstruction errors. Frame-wise global alignment is performed using differentiable parameter estimation solvers on the pixel-wise correspondences to find a global transformation. Experiments on synthetic and real-world data show that our method outperforms the current state-of-the-art in terms of high-fidelity reconstruction and resolving large camera pose misalignment. Our module is an easy-to-use plugin that can be applied to NeRF variants and other neural field applications. The Code and supplementary materials are available at [this https URL](https://rover-xingyu.github.io/L2G-NeRF/).*
+
+- 图示：
+
+![image-20230408102801241](images/image-20230408102801241.png)
+
+![image-20230408102845918](images/image-20230408102845918.png)
+
+
+
+
+
+---
+
+[41] Nerflets: Local Radiance Fields for Efficient Structure-Aware 3D Scene Representation from 2D Supervision
+
+- 题目：Nerflets： 用于高效结构感知的三维场景的二维监督的局部辐射场
+- 分类：高效和结构感知的三维场景表示, 大规模，室内室外，场景编辑，全景分割
+- Project: https://jetd1.github.io/nerflets-web/
+- Code: none
+- Paper: https://arxiv.org/pdf/2303.03361.pdf
+- 摘要： 
+
+> *We address efficient and structure-aware 3D scene representation from images. Nerflets are our key contribution -- a set of local neural radiance fields that together represent a scene. Each nerflet maintains its own spatial position, orientation, and extent, within which it contributes to panoptic, density, and radiance reconstructions. By leveraging only photometric and inferred panoptic image supervision, we can directly and jointly optimize the parameters of a set of nerflets so as to form a decomposed representation of the scene, where each object instance is represented by a group of nerflets. During experiments with indoor and outdoor environments, we find that nerflets: (1) fit and approximate the scene more efficiently than traditional global NeRFs, (2) allow the extraction of panoptic and photometric renderings from arbitrary views, and (3) enable tasks rare for NeRFs, such as 3D panoptic segmentation and interactive editing.*
+
+- 图示：
+
+![image-20230408103318150](images/image-20230408103318150.png)
+
+![image-20230408103408560](images/image-20230408103408560.png)
+
+
+
+---
+
+[42] Learning Detailed Radiance Manifolds for High-Fidelity and 3D-Consistent Portrait Synthesis from Monocular Image
+
+- 题目：从单目图像中获取高保真和三维一致的人像合成的可学习细节辐射流形
+- 分类：单视图人像合成
+- Project: https://yudeng.github.io/GRAMInverter/
+- Code: soon
+- Paper: https://arxiv.org/pdf/2211.13901.pdf
+- 摘要： 
+
+> *A key challenge for novel view synthesis of monocular portrait images is 3D consistency under continuous pose variations. Most existing methods rely on 2D generative models which often leads to obvious 3D inconsistency artifacts. We present a 3D-consistent novel view synthesis approach for monocular portrait images based on a recent proposed 3D-aware GAN, namely Generative Radiance Manifolds (GRAM), which has shown strong 3D consistency at multiview image generation of virtual subjects via the radiance manifolds representation. However, simply learning an encoder to map a real image into the latent space of GRAM can only reconstruct coarse radiance manifolds without faithful fine details, while improving the reconstruction fidelity via instance-specific optimization is time-consuming. We introduce a novel detail manifolds reconstructor to learn 3D-consistent fine details on the radiance manifolds from monocular images, and combine them with the coarse radiance manifolds for high-fidelity reconstruction. The 3D priors derived from the coarse radiance manifolds are used to regulate the learned details to ensure reasonable synthesized results at novel views. Trained on in-the-wild 2D images, our method achieves high-fidelity and 3D-consistent portrait synthesis largely outperforming the prior art.*
+
+- 图示：
+
+![image-20230408103801191](images/image-20230408103801191.png)
+
+![image-20230408103905948](images/image-20230408103905948.png)
+
+
+
+
+
+---
+
+[43] $I^2$-SDF: Intrinsic Indoor Scene Reconstruction and Editing via Raytracing in Neural SDFs
+
+- 题目：I2-SDF： 通过神经SDF中的光线追踪进行内在的室内场景重建和编辑
+- 分类：室内重建,可编辑,重光照
+- Project: https://jingsenzhu.github.io/i2-sdf/
+- Code: https://github.com/jingsenzhu/i2-sdf
+- Paper: https://arxiv.org/pdf/2303.07634.pdf
+- 摘要： 
+
+> *In this work, we present I2-SDF, a new method for intrinsic indoor scene reconstruction and editing using differentiable Monte Carlo raytracing on neural signed distance fields (SDFs). Our holistic neural SDF-based framework jointly recovers the underlying shapes, incident radiance and materials from multi-view images. We introduce a novel bubble loss for fine-grained small objects and error-guided adaptive sampling scheme to largely improve the reconstruction quality on large-scale indoor scenes. Further, we propose to decompose the neural radiance field into spatially-varying material of the scene as a neural field through surface-based, differentiable Monte Carlo raytracing and emitter semantic segmentations, which enables physically based and photorealistic scene relighting and editing applications. Through a number of qualitative and quantitative experiments, we demonstrate the superior quality of our method on indoor scene reconstruction, novel view synthesis, and scene editing compared to state-of-the-art baselines.*
+
+- 图示：
+
+![image-20230408104412035](images/image-20230408104412035.png)
+
+![image-20230408104432278](images/image-20230408104432278.png)
+
+
+
+
+
+---
+
+[44] NoPe-NeRF: Optimising Neural Radiance Field with No Pose Prior
+
+- 题目：NoPe-NeRF：优化无位姿先验的神经辐射场
+- 分类：无位姿
+- Project: https://nope-nerf.active.vision/
+- Code: soon
+- Paper: https://arxiv.org/pdf/2212.07388.pdf
+- 摘要： 
+
+> *Training a Neural Radiance Field (NeRF) without pre-computed camera poses is challenging. Recent advances in this direction demonstrate the possibility of jointly optimising a NeRF and camera poses in forward-facing scenes. However, these methods still face difficulties during dramatic camera movement. We tackle this challenging problem by incorporating undistorted monocular depth priors. These priors are generated by correcting scale and shift parameters during training, with which we are then able to constrain the relative poses between consecutive frames. This constraint is achieved using our proposed novel loss functions. Experiments on real-world indoor and outdoor scenes show that our method can handle challenging camera trajectories and outperforms existing methods in terms of novel view rendering quality and pose estimation accuracy. Our project page is https://nope-nerf.active.vision.*
+
+- 图示：
+
+![image-20230408104741859](images/image-20230408104741859.png)
+
+![image-20230408104802579](images/image-20230408104802579.png)
+
+
+
+
+
+---
+
+[45] Latent-NeRF for Shape-Guided Generation of 3D Shapes and Textures
+
+- 题目：用于形状引导的三维形状和纹理生成的Latent-NeRF
+- 分类：Text-to-3D
+- Code: https://github.com/eladrich/latent-nerf
+- Paper: https://arxiv.org/pdf/2211.07600.pdf
+- 摘要： 
+
+> *Text-guided image generation has progressed rapidly in recent years, inspiring major breakthroughs in text-guided shape generation. Recently, it has been shown that using score distillation, one can successfully text-guide a NeRF model to generate a 3D object. We adapt the score distillation to the publicly available, and computationally efficient, Latent Diffusion Models, which apply the entire diffusion process in a compact latent space of a pretrained autoencoder. As NeRFs operate in image space, a naive solution for guiding them with latent score distillation would require encoding to the latent space at each guidance step. Instead, we propose to bring the NeRF to the latent space, resulting in a Latent-NeRF. Analyzing our Latent-NeRF, we show that while Text-to-3D models can generate impressive results, they are inherently unconstrained and may lack the ability to guide or enforce a specific 3D structure. To assist and direct the 3D generation, we propose to guide our Latent-NeRF using a Sketch-Shape: an abstract geometry that defines the coarse structure of the desired object. Then, we present means to integrate such a constraint directly into a Latent-NeRF. This unique combination of text and shape guidance allows for increased control over the generation process. We also show that latent score distillation can be successfully applied directly on 3D meshes. This allows for generating high-quality textures on a given geometry. Our experiments validate the power of our different forms of guidance and the efficiency of using latent rendering. Implementation is available at [this https URL](https://github.com/eladrich/latent-nerf)*
+
+- 图示：
+
+![image-20230408105040428](images/image-20230408105040428.png)
+
+
+
+
+
+---
+
+[46] Real-Time Neural Light Field on Mobile Devices
+
+- 题目：移动设备上的实时神经光场
+- 分类：移动设备,实时
+- Project: https://snap-research.github.io/MobileR2L/
+- Code: https://github.com/snap-research/MobileR2L, soon
+- Paper: https://arxiv.org/pdf/2212.08057.pdf
+- 摘要： 
+
+> *Recent efforts in Neural Rendering Fields (NeRF) have shown impressive results on novel view synthesis by utilizing implicit neural representation to represent 3D scenes. Due to the process of volumetric rendering, the inference speed for NeRF is extremely slow, limiting the application scenarios of utilizing NeRF on resource-constrained hardware, such as mobile devices. Many works have been conducted to reduce the latency of running NeRF models. However, most of them still require high-end GPU for acceleration or extra storage memory, which is all unavailable on mobile devices. Another emerging direction utilizes the neural light field (NeLF) for speedup, as only one forward pass is performed on a ray to predict the pixel color. Nevertheless, to reach a similar rendering quality as NeRF, the network in NeLF is designed with intensive computation, which is not mobile-friendly. In this work, we propose an efficient network that runs in real-time on mobile devices for neural rendering. We follow the setting of NeLF to train our network. Unlike existing works, we introduce a novel network architecture that runs efficiently on mobile devices with low latency and small size, i.e., saving 15×∼24× storage compared with MobileNeRF. Our model achieves high-resolution generation while maintaining real-time inference for both synthetic and real-world scenes on mobile devices, e.g., 18.04ms (iPhone 13) for rendering one 1008×756 image of real 3D scenes. Additionally, we achieve similar image quality as NeRF and better quality than MobileNeRF (PSNR 26.15 vs. 25.91 on the real-world forward-facing dataset).*
+
+- 图示：
+
+![image-20230408105329987](images/image-20230408105329987.png)
+
+![image-20230408105409314](images/image-20230408105409314.png)
+
+
+
+
+
+---
+
+[47] Renderable Neural Radiance Map for Visual Navigation
+
+- 题目：用于视觉导航的可渲染神经辐射图
+- 分类：视觉导航
+- Project: https://rllab-snu.github.io/projects/RNR-Map/
+- Code: https://github.com/rllab-snu/RNR-Map, soon
+- Paper: https://arxiv.org/pdf/2303.00304.pdf
+- 摘要： 
+
+> *We propose a novel type of map for visual navigation, a renderable neural radiance map (RNR-Map), which is designed to contain the overall visual information of a 3D environment. The RNR-Map has a grid form and consists of latent codes at each pixel. These latent codes are embedded from image observations, and can be converted to the neural radiance field which enables image rendering given a camera pose. The recorded latent codes implicitly contain visual information about the environment, which makes the RNR-Map visually descriptive. This visual information in RNR-Map can be a useful guideline for visual localization and navigation. We develop localization and navigation frameworks that can effectively utilize the RNR-Map. We evaluate the proposed frameworks on camera tracking, visual localization, and image-goal navigation. Experimental results show that the RNR-Map-based localization framework can find the target location based on a single query image with fast speed and competitive accuracy compared to other baselines. Also, this localization framework is robust to environmental changes, and even finds the most visually similar places when a query image from a different environment is given. The proposed navigation framework outperforms the existing image-goal navigation methods in difficult scenarios, under odometry and actuation noises. The navigation framework shows 65.7% success rate in curved scenarios of the NRNS dataset, which is an improvement of 18.6% over the current state-of-the-art. Project page: [this https URL](https://rllab-snu.github.io/projects/RNR-Map/)*
+
+- 图示：
+
+![image-20230408110324743](images/image-20230408110324743.png)
+
+![image-20230408110408873](images/image-20230408110408873.png)
+
+
+
+
+
+
+
+----
+
+[48] NeRF-Gaze: A Head-Eye Redirection Parametric Model for Gaze Estimation
+
+- 题目：NeRF-Gaze： 一个用于凝视估计的头眼重定向参数模型
+- 分类：人脸建模
+- Project: none
+- Code: none
+- Paper: https://arxiv.org/pdf/2212.14710.pdf
+- 摘要： 
+
+> *Gaze estimation is the fundamental basis for many visual tasks. Yet, the high cost of acquiring gaze datasets with 3D annotations hinders the optimization and application of gaze estimation models. In this work, we propose a novel Head-Eye redirection parametric model based on Neural Radiance Field, which allows dense gaze data generation with view consistency and accurate gaze direction. Moreover, our head-eye redirection parametric model can decouple the face and eyes for separate neural rendering, so it can achieve the purpose of separately controlling the attributes of the face, identity, illumination, and eye gaze direction. Thus diverse 3D-aware gaze datasets could be obtained by manipulating the latent code belonging to different face attributions in an unsupervised manner. Extensive experiments on several benchmarks demonstrate the effectiveness of our method in domain generalization and domain adaptation for gaze estimation tasks.*
+
+- 图示：
+
+![image-20230408110514400](images/image-20230408110514400.png)
+
+![image-20230408110546947](images/image-20230408110546947.png)
+
+
+
+
+
+
+
+
+
+----
+
+[49] NeRFLiX: High-Quality Neural View Synthesis by Learning a Degradation-Driven Inter-viewpoint MiXer
+
+- 题目：NeRFLiX：通过学习退化驱动的视点之间的MiXer来实现高质量的神经视图合成
+- 分类：逼真合成
+- Project: https://redrock303.github.io/nerflix/
+- Code: soon
+- Paper: https://arxiv.org/pdf/2303.06919.pdf
+- 摘要： 
+
+> *Neural radiance fields (NeRF) show great success in novel view synthesis. However, in real-world scenes, recovering high-quality details from the source images is still challenging for the existing NeRF-based approaches, due to the potential imperfect calibration information and scene representation inaccuracy. Even with high-quality training frames, the synthetic novel views produced by NeRF models still suffer from notable rendering artifacts, such as noise, blur, etc. Towards to improve the synthesis quality of NeRF-based approaches, we propose NeRFLiX, a general NeRF-agnostic restorer paradigm by learning a degradation-driven inter-viewpoint mixer. Specially, we design a NeRF-style degradation modeling approach and construct large-scale training data, enabling the possibility of effectively removing NeRF-native rendering artifacts for existing deep neural networks. Moreover, beyond the degradation removal, we propose an inter-viewpoint aggregation framework that is able to fuse highly related high-quality training images, pushing the performance of cutting-edge NeRF models to entirely new levels and producing highly photo-realistic synthetic views.*
+
+- 图示：
+
+![image-20230408110927945](images/image-20230408110927945.png)
+
+![image-20230408110957855](images/image-20230408110957855.png)
+
+
+
+
+
+----
+
+[50] 3D Video Loops from Asynchronous Input
+
+- 题目：异步输入的3D视频循环
+- 分类：动态场景
+- Project: https://limacv.github.io/VideoLoop3D_web/
+- Code: https://github.com/limacv/VideoLoop3D
+- Paper: https://arxiv.org/pdf/2303.05312.pdf
+- 摘要： 
+
+> *Looping videos are short video clips that can be looped endlessly without visible seams or artifacts. They provide a very attractive way to capture the dynamism of natural scenes. Existing methods have been mostly limited to 2D representations. In this paper, we take a step forward and propose a practical solution that enables an immersive experience on dynamic 3D looping scenes. The key challenge is to consider the per-view looping conditions from asynchronous input while maintaining view consistency for the 3D representation. We propose a novel sparse 3D video representation, namely Multi-Tile Video (MTV), which not only provides a view-consistent prior, but also greatly reduces memory usage, making the optimization of a 4D volume tractable. Then, we introduce a two-stage pipeline to construct the 3D looping MTV from completely asynchronous multi-view videos with no time overlap. A novel looping loss based on video temporal retargeting algorithms is adopted during the optimization to loop the 3D scene. Experiments of our framework have shown promise in successfully generating and rendering photorealistic 3D looping videos in real time even on mobile devices. The code, dataset, and live demos are available in [this https URL](https://limacv.github.io/VideoLoop3D_web/).*
+
+- 图示：
+
+![image-20230408111349528](images/image-20230408111349528.png)
+
+![image-20230408111402116](images/image-20230408111402116.png)
+
+
+
+
+
+----
+
+[51] 
 
 - 题目：
 - 分类：
+- Project: 
 - Code: 
 - Paper: 
 - 摘要： 
@@ -503,164 +1126,15 @@
 
 
 
-[25] 
+
+
+----
+
+[52] 
 
 - 题目：
 - 分类：
-- Code: 
-- Paper: 
-- 摘要： 
-
-> 
-
-- 图示：
-
-
-
-[26] 
-
-- 题目：
-- 分类：
-- Code: 
-- Paper: 
-- 摘要： 
-
-> 
-
-- 图示：
-
-
-
-
-
-[27] 
-
-- 题目：
-- 分类：
-- Code: 
-- Paper: 
-- 摘要： 
-
-> 
-
-- 图示：
-
-
-
-
-
-[28] 
-
-- 题目：
-- 分类：
-- Code: 
-- Paper: 
-- 摘要： 
-
-> 
-
-- 图示：
-
-
-
-
-
-[29] 
-
-- 题目：
-- 分类：
-- Code: 
-- Paper: 
-- 摘要： 
-
-> 
-
-- 图示：
-
-
-
-
-
-[30] 
-
-- 题目：
-- 分类：
-- Code: 
-- Paper: 
-- 摘要： 
-
-> 
-
-- 图示：
-
-
-
-[31] 
-
-- 题目：
-- 分类：
-- Code: 
-- Paper: 
-- 摘要： 
-
-> 
-
-- 图示：
-
-
-
-
-
-[32] 
-
-- 题目：
-- 分类：
-- Code: 
-- Paper: 
-- 摘要： 
-
-> 
-
-- 图示：
-
-
-
-[33] 
-
-- 题目：
-- 分类：
-- Code: 
-- Paper: 
-- 摘要： 
-
-> 
-
-- 图示：
-
-
-
-
-
-[34] 
-
-- 题目：
-- 分类：
-- Code: 
-- Paper: 
-- 摘要： 
-
-> 
-
-- 图示：
-
-
-
-
-
-[35] 
-
-- 题目：
-- 分类：
+- Project: 
 - Code: 
 - Paper: 
 - 摘要： 
@@ -675,10 +1149,15 @@
 
 
 
-[36] 
+
+
+----
+
+[53] 
 
 - 题目：
 - 分类：
+- Project: 
 - Code: 
 - Paper: 
 - 摘要： 
@@ -693,10 +1172,15 @@
 
 
 
-[37] 
+
+
+----
+
+[54] 
 
 - 题目：
 - 分类：
+- Project: 
 - Code: 
 - Paper: 
 - 摘要： 
@@ -711,90 +1195,15 @@
 
 
 
-[38] 
+
+
+----
+
+[55] 
 
 - 题目：
 - 分类：
-- Code: 
-- Paper: 
-- 摘要： 
-
-> 
-
-- 图示：
-
-
-
-
-
-[39] 
-
-- 题目：
-- 分类：
-- Code: 
-- Paper: 
-- 摘要： 
-
-> 
-
-- 图示：
-
-
-
-
-
-[40] 
-
-- 题目：
-- 分类：
-- Code: 
-- Paper: 
-- 摘要： 
-
-> 
-
-- 图示：
-
-
-
-
-
-[41] 
-
-- 题目：
-- 分类：
-- Code: 
-- Paper: 
-- 摘要： 
-
-> 
-
-- 图示：
-
-
-
-
-
-[42] 
-
-- 题目：
-- 分类：
-- Code: 
-- Paper: 
-- 摘要： 
-
-> 
-
-- 图示：
-
-
-
-
-
-[43] 
-
-- 题目：
-- 分类：
+- Project: 
 - Code: 
 - Paper: 
 - 摘要： 
@@ -809,10 +1218,13 @@
 
 
 
-[44] 
+----
+
+[56] 
 
 - 题目：
 - 分类：
+- Project: 
 - Code: 
 - Paper: 
 - 摘要： 
@@ -825,10 +1237,15 @@
 
 
 
-[45] 
+
+
+----
+
+[57] 
 
 - 题目：
 - 分类：
+- Project: 
 - Code: 
 - Paper: 
 - 摘要： 
@@ -841,10 +1258,224 @@
 
 
 
-[46] 
+
+
+----
+
+[58] 
 
 - 题目：
 - 分类：
+- Project: 
+- Code: 
+- Paper: 
+- 摘要： 
+
+> 
+
+- 图示：
+
+
+
+
+
+
+
+----
+
+[59] 
+
+- 题目：
+- 分类：
+- Project: 
+- Code: 
+- Paper: 
+- 摘要： 
+
+> 
+
+- 图示：
+
+
+
+
+
+----
+
+[60] 
+
+- 题目：
+- 分类：
+- Project: 
+- Code: 
+- Paper: 
+- 摘要： 
+
+> 
+
+- 图示：
+
+
+
+
+
+
+
+----
+
+[61] 
+
+- 题目：
+- 分类：
+- Project: 
+- Code: 
+- Paper: 
+- 摘要： 
+
+> 
+
+- 图示：
+
+
+
+
+
+
+
+
+
+
+
+----
+
+[62] 
+
+- 题目：
+- 分类：
+- Project: 
+- Code: 
+- Paper: 
+- 摘要： 
+
+> 
+
+- 图示：
+
+
+
+
+
+
+
+
+
+
+
+
+
+----
+
+[63] 
+
+- 题目：
+- 分类：
+- Project: 
+- Code: 
+- Paper: 
+- 摘要： 
+
+> 
+
+- 图示：
+
+
+
+
+
+
+
+
+
+
+
+----
+
+[64] 
+
+- 题目：
+- 分类：
+- Project: 
+- Code: 
+- Paper: 
+- 摘要： 
+
+> 
+
+- 图示：
+
+
+
+
+
+
+
+
+
+
+
+----
+
+[65] 
+
+- 题目：
+- 分类：
+- Project: 
+- Code: 
+- Paper: 
+- 摘要： 
+
+> 
+
+- 图示：
+
+
+
+
+
+
+
+
+
+----
+
+[66] 
+
+- 题目：
+- 分类：
+- Project: 
+- Code: 
+- Paper: 
+- 摘要： 
+
+> 
+
+- 图示：
+
+
+
+
+
+
+
+
+
+----
+
+[67] 
+
+- 题目：
+- 分类：
+- Project: 
 - Code: 
 - Paper: 
 - 摘要： 
