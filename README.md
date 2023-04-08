@@ -1,11 +1,11 @@
 # NeRFs-CVPR2023
 
+
+
+
+
 > - 推荐Repo:
 >   - [CVPR2023论文整理](https://github.com/extreme-assistant/CVPR2023-Paper-Code-Interpretation/blob/master/CVPR2023.md)
-
-
-
-
 
 
 
@@ -645,7 +645,7 @@
 [31] Grid-guided Neural Radiance Fields for Large Urban Scenes
 
 - 题目：基于网格引导的神经辐射场的大型城市场景重建
-- 分类：
+- 分类：大规模街景重建
 - Project: https://city-super.github.io/gridnerf/
 - Code: None
 - Paper: https://arxiv.org/pdf/2303.14001.pdf
