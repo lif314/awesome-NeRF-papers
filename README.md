@@ -1,11 +1,9 @@
 # NeRFs-CVPR2023
 
+> - 当前论文数：60
+> - 推荐Repo: [CVPR2023论文整理](https://github.com/extreme-assistant/CVPR2023-Paper-Code-Interpretation/blob/master/CVPR2023.md)
 
 
-
-
-> - 推荐Repo:
->   - [CVPR2023论文整理](https://github.com/extreme-assistant/CVPR2023-Paper-Code-Interpretation/blob/master/CVPR2023.md)
 
 
 
@@ -141,7 +139,7 @@
 
 - 题目：透明容器内物体的神经 3D 重建
 - 分类：3D重建
-- Code: https://github.com/hirotong/ReNeuS，soon
+- Code: https://github.com/hirotong/ReNeuS
 - Paper: https://arxiv.org/pdf/2303.13805.pdf
 - 摘要： 
 
@@ -160,7 +158,7 @@
 - 题目：HexPlane：动态场景的快速表示
 - 分类：动态场景重建
 - Project: https://caoang327.github.io/HexPlane/
-- Code: https://github.com/Caoang327/HexPlane, soon
+- Code: https://github.com/Caoang327/HexPlane
 - Paper: https://arxiv.org/pdf/2301.09632.pdf
 - 摘要： 
 
@@ -282,7 +280,7 @@
 - 题目：NeuDA：用于高保真隐式表面重建的神经可变形锚
 - 分类：保真表面重建
 - Project: https://3d-front-future.github.io/neuda/
-- Code: https://github.com/3D-FRONT-FUTURE/NeuDA, soon
+- Code: https://github.com/3D-FRONT-FUTURE/NeuDA
 - Paper: https://arxiv.org/pdf/2303.02375.pdf
 - 摘要： 
 
@@ -501,7 +499,7 @@
 
 - 题目：GM-NeRF：从多视图图像中学习可泛化的基于模型的神经辐射场
 - 分类：人体重建
-- Code: https://github.com/JanaldoChen/GM-NeRF, soon
+- Code: https://github.com/JanaldoChen/GM-NeRF
 - Paper: https://arxiv.org/pdf/2303.13777.pdf
 - 摘要： 
 
@@ -520,7 +518,7 @@
 - 题目：渐进优化的局部辐射场，用于稳健的视图合成
 - 分类：增量重建，联合估计位姿，室内室外
 - Project: https://localrf.github.io/
-- Code: https://github.com/facebookresearch/localrf, soon
+- Code: https://github.com/facebookresearch/localrf
 - Paper: https://arxiv.org/pdf/2303.13791.pdf
 - 摘要： 
 
@@ -561,7 +559,7 @@
 - 题目：SINE：语义驱动的基于图像的NeRF编辑，具有先验引导编辑字段
 - 分类：可编辑
 - Project: https://zju3dv.github.io/sine/
-- Code: https://github.com/zju3dv/SINE, soon
+- Code: https://github.com/zju3dv/SINE
 - Paper: https://arxiv.org/pdf/2303.13277.pdf
 - 摘要： 
 
@@ -691,7 +689,7 @@
 
 - 题目：鲁棒动态辐射场
 - 分类：动态场景
-- Code: https://robust-dynrf.github.io/, soon
+- Code: https://robust-dynrf.github.io/
 - Paper: https://robust-dynrf.github.io/
 - 摘要： 
 
@@ -789,7 +787,7 @@
 - 题目：ShadowNeuS： 通过阴影射线监督进行神经SDF重建
 - 分类：阴影射线监督
 - Project: https://gerwang.github.io/shadowneus/
-- Code: https://github.com/gerwang/ShadowNeuS, soon
+- Code: https://github.com/gerwang/ShadowNeuS
 - Paper: https://arxiv.org/pdf/2211.14086.pdf
 - 摘要： 
 
@@ -993,7 +991,7 @@
 - 题目：移动设备上的实时神经光场
 - 分类：移动设备,实时
 - Project: https://snap-research.github.io/MobileR2L/
-- Code: https://github.com/snap-research/MobileR2L, soon
+- Code: https://github.com/snap-research/MobileR2L
 - Paper: https://arxiv.org/pdf/2212.08057.pdf
 - 摘要： 
 
@@ -1016,7 +1014,7 @@
 - 题目：用于视觉导航的可渲染神经辐射图
 - 分类：视觉导航
 - Project: https://rllab-snu.github.io/projects/RNR-Map/
-- Code: https://github.com/rllab-snu/RNR-Map, soon
+- Code: https://github.com/rllab-snu/RNR-Map
 - Paper: https://arxiv.org/pdf/2303.00304.pdf
 - 摘要： 
 
@@ -1189,7 +1187,7 @@
 - 题目：F2-NeRF：使用自由相机轨迹进行快速神经辐射场训练
 - 分类：任意相机路径,快速
 - Project: https://totoro97.github.io/projects/f2-nerf/
-- Code: https://github.com/totoro97/f2-nerf, soon
+- Code: https://github.com/totoro97/f2-nerf
 - Paper: https://arxiv.org/pdf/2303.15951.pdf
 - 摘要： 
 
@@ -1264,7 +1262,7 @@
 - 题目：GazeNeRF：具有神经辐射场的3D感知注视重定向
 - 分类：Gaze redirection 视线重定向
 - Project: none
-- Code: https://github.com/AlessandroRuzzi/GazeNeRF, soon
+- Code: https://github.com/AlessandroRuzzi/GazeNeRF
 - Paper: https://arxiv.org/pdf/2212.04823.pdf
 - 摘要： 
 
@@ -1335,7 +1333,7 @@
 - 题目：ESLAM：基于符号距离场混合表示的高效密集SLAM系统
 - 分类：混合表达SDF,高效密集SLAM
 - Project: https://www.idiap.ch/paper/eslam/
-- Code: https://github.com/idiap/ESLAM, soon
+- Code: https://github.com/idiap/ESLAM
 - Paper: https://arxiv.org/pdf/2211.11704.pdf
 - 摘要： 
 
