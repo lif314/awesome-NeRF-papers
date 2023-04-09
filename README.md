@@ -1,6 +1,6 @@
 # NeRFs-CVPR2023
 
-> - 当前论文数：60
+> - 当前论文数：69
 > - 推荐Repo: [CVPR2023论文整理](https://github.com/extreme-assistant/CVPR2023-Paper-Code-Interpretation/blob/master/CVPR2023.md)
 
 
