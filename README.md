@@ -1351,18 +1351,72 @@
 
 ----
 
-[61] 
+[61] Instant-NVR: Instant Neural Volumetric Rendering for Human-object Interactions from Monocular RGBD Stream
 
-- 题目：
-- 分类：
-- Project: 
-- Code: 
-- Paper: 
+- 题目：Instant-NVR：用于单目RGBD流的人机交互的即时神经体积渲染
+- 分类：人机交互,动态场景
+- Project: https://nowheretrix.github.io/Instant-NVR/
+- Code: soon
+- Paper: https://arxiv.org/pdf/2304.03184.pdf
 - 摘要： 
 
-> 
+> *Convenient 4D modeling of human-object interactions is essential for numerous applications. However, monocular tracking and rendering of complex interaction scenarios remain challenging. In this paper, we propose Instant-NVR, a neural approach for instant volumetric human-object tracking and rendering using a single RGBD camera. It bridges traditional non-rigid tracking with recent instant radiance field techniques via a multi-thread tracking-rendering mechanism. In the tracking front-end, we adopt a robust human-object capture scheme to provide sufficient motion priors. We further introduce a separated instant neural representation with a novel hybrid deformation module for the interacting scene. We also provide an on-the-fly reconstruction scheme of the dynamic/static radiance fields via efficient motion-prior searching. Moreover, we introduce an online key frame selection scheme and a rendering-aware refinement strategy to significantly improve the appearance details for online novel-view synthesis. Extensive experiments demonstrate the effectiveness and efficiency of our approach for the instant generation of human-object radiance fields on the fly, notably achieving real-time photo-realistic novel view synthesis under complex human-object interactions.*
 
 - 图示：
+
+![image-20230409153619325](images/image-20230409153619325.png)
+
+
+
+
+
+
+
+
+
+----
+
+[62] Disorder-invariant Implicit Neural Representation
+
+- 题目：无序不变的隐式神经表征
+- 分类：本质工作,光谱偏差
+- Project: https://ezio77.github.io/DINER-website/
+- Code: https://github.com/Ezio77/DINER
+- Paper: https://arxiv.org/pdf/2304.00837.pdf
+- 摘要： 
+
+> *Implicit neural representation (INR) characterizes the attributes of a signal as a function of corresponding coordinates which emerges as a sharp weapon for solving inverse problems. However, the expressive power of INR is limited by the spectral bias in the network training. In this paper, we find that such a frequency-related problem could be greatly solved by re-arranging the coordinates of the input signal, for which we propose the disorder-invariant implicit neural representation (DINER) by augmenting a hash-table to a traditional INR backbone. Given discrete signals sharing the same histogram of attributes and different arrangement orders, the hash-table could project the coordinates into the same distribution for which the mapped signal can be better modeled using the subsequent INR network, leading to significantly alleviated spectral bias. Furthermore, the expressive power of the DINER is determined by the width of the hash-table. Different width corresponds to different geometrical elements in the attribute space, \textit{e.g.}, 1D curve, 2D curved-plane and 3D curved-volume when the width is set as 1, 2 and 3, respectively. More covered areas of the geometrical elements result in stronger expressive power. Experiments not only reveal the generalization of the DINER for different INR backbones (MLP vs. SIREN) and various tasks (image/video representation, phase retrieval, refractive index recovery, and neural radiance field optimization) but also show the superiority over the state-of-the-art algorithms both in quality and speed. Project page: [this https URL](https://ezio77.github.io/DINER-website/)*
+
+- 图示：
+
+![image-20230409154001357](images/image-20230409154001357.png)
+
+![image-20230409154248532](images/image-20230409154248532.png)
+
+
+
+
+
+
+
+----
+
+[63] NeFII: Inverse Rendering for Reflectance Decomposition with Near-Field Indirect Illumination
+
+- 题目：NeFII：近场间接照明反射分解的逆向渲染
+- 分类：光照反射渲染
+- Project: none
+- Code: none
+- Paper: https://arxiv.org/pdf/2303.16617.pdf
+- 摘要： 
+
+> *Inverse rendering methods aim to estimate geometry, materials and illumination from multi-view RGB images. In order to achieve better decomposition, recent approaches attempt to model indirect illuminations reflected from different materials via Spherical Gaussians (SG), which, however, tends to blur the high-frequency reflection details. In this paper, we propose an end-to-end inverse rendering pipeline that decomposes materials and illumination from multi-view images, while considering near-field indirect illumination. In a nutshell, we introduce the Monte Carlo sampling based path tracing and cache the indirect illumination as neural radiance, enabling a physics-faithful and easy-to-optimize inverse rendering method. To enhance efficiency and practicality, we leverage SG to represent the smooth environment illuminations and apply importance sampling techniques. To supervise indirect illuminations from unobserved directions, we develop a novel radiance consistency constraint between implicit neural radiance and path tracing results of unobserved rays along with the joint optimization of materials and illuminations, thus significantly improving the decomposition performance. Extensive experiments demonstrate that our method outperforms the state-of-the-art on multiple synthetic and real datasets, especially in terms of inter-reflection decomposition.*
+
+- 图示：
+
+![image-20230409155550318](images/image-20230409155550318.png)
+
+
 
 
 
@@ -1376,20 +1430,93 @@
 
 ----
 
-[62] 
+[64] PAniC-3D: Stylized Single-view 3D Reconstruction from Portraits of Anime Characters
 
-- 题目：
-- 分类：
-- Project: 
-- Code: 
-- Paper: 
+- 题目：PAniC-3D：动漫人物肖像的程式化单视图3D重建
+- 分类：单视图3D重建
+- Project: none
+- Code: https://github.com/ShuhongChen/panic3d-anime-reconstruction
+- Paper: https://arxiv.org/pdf/2303.14587.pdf
 - 摘要： 
 
-> 
+> *We propose PAniC-3D, a system to reconstruct stylized 3D character heads directly from illustrated (p)ortraits of (ani)me (c)haracters. Our anime-style domain poses unique challenges to single-view reconstruction; compared to natural images of human heads, character portrait illustrations have hair and accessories with more complex and diverse geometry, and are shaded with non-photorealistic contour lines. In addition, there is a lack of both 3D model and portrait illustration data suitable to train and evaluate this ambiguous stylized reconstruction task. Facing these challenges, our proposed PAniC-3D architecture crosses the illustration-to-3D domain gap with a line-filling model, and represents sophisticated geometries with a volumetric radiance field. We train our system with two large new datasets (11.2k Vroid 3D models, 1k Vtuber portrait illustrations), and evaluate on a novel AnimeRecon benchmark of illustration-to-3D pairs. PAniC-3D significantly outperforms baseline methods, and provides data to establish the task of stylized reconstruction from portrait illustrations.*
 
 - 图示：
 
+![img](images/schematic.png)
 
+![image-20230409155258955](images/image-20230409155258955.png)
+
+
+
+
+
+
+
+----
+
+[65] Temporal Interpolation Is All You Need for Dynamic Neural Radiance Fields
+
+- 题目：时间插值是动态神经辐射场所需的一切
+- 分类：动态场景
+- Project: https://sungheonpark.github.io/tempinterpnerf/
+- Code: none
+- Paper: https://arxiv.org/pdf/2302.09311.pdf
+- 摘要： 
+
+> *Temporal interpolation often plays a crucial role to learn meaningful representations in dynamic scenes. In this paper, we propose a novel method to train spatiotemporal neural radiance fields of dynamic scenes based on temporal interpolation of feature vectors. Two feature interpolation methods are suggested depending on underlying representations, neural networks or grids. In the neural representation, we extract features from space-time inputs via multiple neural network modules and interpolate them based on time frames. The proposed multi-level feature interpolation network effectively captures features of both short-term and long-term time ranges. In the grid representation, space-time features are learned via four-dimensional hash grids, which remarkably reduces training time. The grid representation shows more than 100 times faster training speed than the previous neural-net-based methods while maintaining the rendering quality. Concatenating static and dynamic features and adding a simple smoothness term further improve the performance of our proposed models. Despite the simplicity of the model architectures, our method achieved state-of-the-art performance both in rendering quality for the neural representation and in training speed for the grid representation.*
+
+- 图示：
+
+![image-20230409160544457](images/image-20230409160544457.png)
+
+
+
+
+
+
+
+----
+
+[66] Dream3D: Zero-Shot Text-to-3D Synthesis Using 3D Shape Prior and Text-to-Image Diffusion Models
+
+- 题目：Dream3D：使用3D形状先验和文本到图像扩散模型的零样本文本到3D合成
+- 分类：CLIP, Text-to-3D,扩散模型,零样本
+- Project: https://bluestyle97.github.io/dream3d/
+- Code: soon
+- Paper: https://arxiv.org/pdf/2212.14704.pdf
+- 摘要： 
+
+> *Recent CLIP-guided 3D optimization methods, such as DreamFields and PureCLIPNeRF, have achieved impressive results in zero-shot text-to-3D synthesis. However, due to scratch training and random initialization without prior knowledge, these methods often fail to generate accurate and faithful 3D structures that conform to the input text. In this paper, we make the first attempt to introduce explicit 3D shape priors into the CLIP-guided 3D optimization process. Specifically, we first generate a high-quality 3D shape from the input text in the text-to-shape stage as a 3D shape prior. We then use it as the initialization of a neural radiance field and optimize it with the full prompt. To address the challenging text-to-shape generation task, we present a simple yet effective approach that directly bridges the text and image modalities with a powerful text-to-image diffusion model. To narrow the style domain gap between the images synthesized by the text-to-image diffusion model and shape renderings used to train the image-to-shape generator, we further propose to jointly optimize a learnable text prompt and fine-tune the text-to-image diffusion model for rendering-style image generation. Our method, Dream3D, is capable of generating imaginative 3D content with superior visual quality and shape accuracy compared to state-of-the-art methods.*
+
+- 图示：
+
+![image-20230409161512379](images/image-20230409161512379.png)
+
+![image-20230409161534073](images/image-20230409161534073.png)
+
+
+
+
+
+
+
+----
+
+[67] SinGRAF: Learning a 3D Generative Radiance Field for a Single Scene
+
+- 题目：SinGRAF：学习单个场景的3D生成辐射场
+- 分类：3D GAN,生成辐射场
+- Project: https://www.computationalimaging.org/publications/singraf/
+- Code: soon
+- Paper: https://arxiv.org/pdf/2211.17260.pdf
+- 摘要： 
+
+> *Generative models have shown great promise in synthesizing photorealistic 3D objects, but they require large amounts of training data. We introduce SinGRAF, a 3D-aware generative model that is trained with a few input images of a single scene. Once trained, SinGRAF generates different realizations of this 3D scene that preserve the appearance of the input while varying scene layout. For this purpose, we build on recent progress in 3D GAN architectures and introduce a novel progressive-scale patch discrimination approach during training. With several experiments, we demonstrate that the results produced by SinGRAF outperform the closest related works in both quality and diversity by a large margin.*
+
+- 图示：
+
+![image-20230409162010560](images/image-20230409162010560.png)
 
 
 
@@ -1403,141 +1530,20 @@
 
 ----
 
-[63] 
+[68] $Level-S^2fM$: Structure from Motion on Neural Level Set of Implicit Surfaces
 
-- 题目：
-- 分类：
-- Project: 
-- Code: 
-- Paper: 
+- 题目：Level-S2fM：隐式曲面的神经水平集上的运动恢复结构
+- 分类：neural incremental Structure-from-Motion (SfM），增量重建,无位姿
+- Project: https://henry123-boy.github.io/level-s2fm/
+- Code: https://github.com/henry123-boy/Level-S2FM_official/tree/main
+- Paper: https://arxiv.org/pdf/2211.12018.pdf
 - 摘要： 
 
-> 
-
-- 图示：
-
-
-
-
-
-
-
-
-
-
-
-----
-
-[64] 
-
-- 题目：
-- 分类：
-- Project: 
-- Code: 
-- Paper: 
-- 摘要： 
-
-> 
-
-- 图示：
-
-
-
-
-
-
-
-
-
-
-
-----
-
-[65] 
-
-- 题目：
-- 分类：
-- Project: 
-- Code: 
-- Paper: 
-- 摘要： 
-
-> 
-
-- 图示：
-
-
-
-
-
-
-
-
-
-----
-
-[66] 
-
-- 题目：
-- 分类：
-- Project: 
-- Code: 
-- Paper: 
-- 摘要： 
-
-> 
-
-- 图示：
-
-
-
-
-
-
-
-
-
-----
-
-[67] 
-
-- 题目：
-- 分类：
-- Project: 
-- Code: 
-- Paper: 
-- 摘要： 
-
-> 
-
-- 图示：
-
-
-
-
-
-
-
-
-
-----
-
-[68] 
-
-- 题目：
-- 分类：
-- Project: 
-- Code: 
-- Paper: 
-- 摘要： 
-
-> 
+> *This paper presents a neural incremental Structure-from-Motion (SfM) approach, Level-S2fM, which estimates the camera poses and scene geometry from a set of uncalibrated images by learning coordinate MLPs for the implicit surfaces and the radiance fields from the established keypoint correspondences. Our novel formulation poses some new challenges due to inevitable two-view and few-view configurations in the incremental SfM pipeline, which complicates the optimization of coordinate MLPs for volumetric neural rendering with unknown camera poses. Nevertheless, we demonstrate that the strong inductive basis conveying in the 2D correspondences is promising to tackle those challenges by exploiting the relationship between the ray sampling schemes. Based on this, we revisit the pipeline of incremental SfM and renew the key components, including two-view geometry initialization, the camera poses registration, the 3D points triangulation, and Bundle Adjustment, with a fresh perspective based on neural implicit surfaces. By unifying the scene geometry in small MLP networks through coordinate MLPs, our Level-S2fM treats the zero-level set of the implicit surface as an informative top-down regularization to manage the reconstructed 3D points, reject the outliers in correspondences via querying SDF, and refine the estimated geometries by NBA (Neural BA). Not only does our Level-S2fM lead to promising results on camera pose estimation and scene geometry reconstruction, but it also shows a promising way for neural implicit rendering without knowing camera extrinsic beforehand.*
 
 - 图示
 
-
-
-
+![image-20230409163319079](images/image-20230409163319079.png)
 
 
 
@@ -1547,20 +1553,22 @@
 
 ----
 
-[69] 
+[69] PermutoSDF: Fast Multi-View Reconstruction with Implicit Surfaces using Permutohedral Lattices
 
-- 题目：
-- 分类：
-- Project: 
-- Code: 
-- Paper: 
+- 题目：PermutoSDF：使用全面体晶格的隐式曲面快速多视图重建
+- 分类：快速渲染, 30 fps on an RTX 3090
+- Project: https://radualexandru.github.io/permuto_sdf/
+- Code: https://github.com/RaduAlexandru/permuto_sdf
+- Paper: https://arxiv.org/pdf/2211.12562.pdf
 - 摘要： 
 
-> 
+> *Neural radiance-density field methods have become increasingly popular for the task of novel-view rendering. Their recent extension to hash-based positional encoding ensures fast training and inference with visually pleasing results. However, density-based methods struggle with recovering accurate surface geometry. Hybrid methods alleviate this issue by optimizing the density based on an underlying SDF. However, current SDF methods are overly smooth and miss fine geometric details. In this work, we combine the strengths of these two lines of work in a novel hash-based implicit surface representation. We propose improvements to the two areas by replacing the voxel hash encoding with a permutohedral lattice which optimizes faster, especially for higher dimensions. We additionally propose a regularization scheme which is crucial for recovering high-frequency geometric detail. We evaluate our method on multiple datasets and show that we can recover geometric detail at the level of pores and wrinkles while using only RGB images for supervision. Furthermore, using sphere tracing we can render novel views at 30 fps on an RTX 3090.*
 
 - 图示
 
+![image-20230409162421082](images/image-20230409162421082.png)
 
+![image-20230409162845072](images/image-20230409162845072.png)
 
 
 
