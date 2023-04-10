@@ -1,6 +1,6 @@
 # NeRFs-CVPR2022
 
-> - 当前论文数：36
+> - 当前论文数：37
 > - 收集来源：[CVPR 2022 open access](https://openaccess.thecvf.com/CVPR2022?day=all)  注：搜索词(“nerf” OR “radiance”)
 
 
@@ -1175,7 +1175,35 @@
 
 ---
 
-[37] 
+[37] NICE-SLAM: Neural Implicit Scalable Encoding for SLAM
+
+- 题目：NICE-SLAM：SLAM的神经隐式可扩展编码
+
+- 分类：NeRF-SLAM
+
+- Project: https://pengsongyou.github.io/nice-slam
+
+- Code: https://github.com/cvg/nice-slam
+
+- Paper: https://arxiv.org/pdf/2112.12130.pdf
+
+- 摘要：
+
+  > *Neural implicit representations have recently shown encouraging results in various domains, including promising progress in simultaneous localization and mapping (SLAM). Nevertheless, existing methods produce over-smoothed scene reconstructions and have difficulty scaling up to large scenes. These limitations are mainly due to their simple fully-connected network architecture that does not incorporate local information in the observations. In this paper, we present NICE-SLAM, a dense SLAM system that incorporates multi-level local information by introducing a hierarchical scene representation. Optimizing this representation with pre-trained geometric priors enables detailed reconstruction on large indoor scenes. Compared to recent neural implicit SLAM systems, our approach is more scalable, efficient, and robust. Experiments on five challenging datasets demonstrate competitive results of NICE-SLAM in both mapping and tracking quality. Project page: [this https URL](https://pengsongyou.github.io/nice-slam)*
+
+- 图示：
+
+![image-20230410192632117](NeRFs-CVPR2022.assets/image-20230410192632117.png)
+
+![img](https://pengsongyou.github.io/media/nice-slam/pipeline_overview.png)
+
+
+
+
+
+---
+
+[38] 
 
 - 题目：
 
@@ -1192,10 +1220,6 @@
   > **
 
 - 图示：
-
-
-
-
 
 
 

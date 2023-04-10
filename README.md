@@ -7,12 +7,14 @@
 > - NeRF on CVPR: 
 >
 >   - [NeRFs-CVPR2021: 7](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-CVPR2021.md)
->   - [NeRFs-CVPR2022: 36](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-CVPR2022.md)
+>   - [NeRFs-CVPR2022: 37](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-CVPR2022.md)
 >   - [NeRFs-CVPR2023: 115](https://github.com/lif314/NeRFs-CVPR2023)
 >
 >   ![nerf-cvpr](NeRFs-CVPR2023.assets/nerf-cvpr.png)
 >
 > - 注：本来以为就60多篇，所以没有按照类别整理。现在有115篇，之后会按照类别重新整理1遍:smile:
+
+
 
 
 
