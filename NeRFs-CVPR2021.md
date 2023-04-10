@@ -1,7 +1,7 @@
 # NeRFs-CVPR2021
 
 > - 当前论文数：7
-> - 收集来源：[CVPR 2021 open access](https://openaccess.thecvf.com/CVPR2021?day=all)
+> - 收集来源：[CVPR 2021 open access](https://openaccess.thecvf.com/CVPR2021?day=all)  注：搜索词(“nerf” OR “radiance”)
 
 
 
@@ -228,5 +228,4 @@
 ![image-20230410152833989](NeRFs-CVPR2021.assets/image-20230410152833989.png)
 
 ![image-20230410152909490](NeRFs-CVPR2021.assets/image-20230410152909490.png)
-
 
