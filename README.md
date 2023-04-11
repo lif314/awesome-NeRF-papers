@@ -1,8 +1,10 @@
 # NeRFs-CVPR2023
 
-> - 当前论文数：115
+> - 注：本来以为就60多篇，所以没有按照类别整理。现在有115篇，之后会按照类别重新整理1遍:smile:
 >
 > - 收集来源：[CVPR 2023 Accepted Papers](https://cvpr2023.thecvf.com/Conferences/2023/AcceptedPapers)
+>
+> - NeRF on  CVPR2023: 当前115篇（含部分未公开）
 >
 > - NeRF on CVPR: 
 >
@@ -11,8 +13,6 @@
 >   - [NeRFs-CVPR2023: 115](https://github.com/lif314/NeRFs-CVPR2023)
 >
 >   ![nerf-cvpr](NeRFs-CVPR2023.assets/nerf-cvpr.png)
->
-> - 注：本来以为就60多篇，所以没有按照类别整理。现在有115篇，之后会按照类别重新整理1遍:smile:
 
 
 
@@ -168,8 +168,6 @@
 ![image-20230410133624598](NeRFs-CVPR2023.assets/image-20230410133624598.png)
 
 ![image-20230407201518197](NeRFs-CVPR2023.assets/image-20230407201518197.png)
-
-
 
 
 
