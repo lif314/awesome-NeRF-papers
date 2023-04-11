@@ -2,6 +2,11 @@
 
 > - 注：本来以为就60多篇，所以没有按照类别整理。现在有115篇，之后会按照类别重新整理1遍:smile:
 >
+> - 推荐Repo:
+>
+>   - [awesome-NeRF](https://github.com/awesome-NeRF/awesome-NeRF/)
+>   - [CVPR2023-Papers-with-Code](https://github.com/amusi/CVPR2023-Papers-with-Code)
+>
 > - 收集来源：[CVPR 2023 Accepted Papers](https://cvpr2023.thecvf.com/Conferences/2023/AcceptedPapers)
 >
 > - NeRF on  CVPR2023: 当前115篇（含部分未公开）
@@ -13,6 +18,15 @@
 >   - [NeRFs-CVPR2023: 115](https://github.com/lif314/NeRFs-CVPR2023)
 >
 >   ![nerf-cvpr](NeRFs-CVPR2023.assets/nerf-cvpr.png)
+>
+> - 其它会议论文：
+>
+>   - [NeRFs-NIPS: 17](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-NIPS.md)
+>   - [NeRFs-ICML: 3](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-ICML.md)
+>   - [NeRFs-ICLR: 2](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-ICLR.md)
+>   - [NeRFs-ICCV2021: 23](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-ICCV2021.md)
+>   - [NeRFs-ECCV2022: Comming soon](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-ECCV2022.md)
+>   - [NeRFs-ECCV2020: 1(开山之作)](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRF-ECCV2020.md)
 
 
 

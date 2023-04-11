@@ -1,9 +1,9 @@
 # NeRFs-NIPS
 
-> - 当前论文数：
+> - 当前论文数：17
 > - [NeRFs-NIPS2020](#NeRFs-NIPS2020) : 1
 >
-> - [NeRFs-NIPS2021](#NeRFs-NIPS2021) : comming soon
+> - [NeRFs-NIPS2021](#NeRFs-NIPS2021) : 4
 > - [NeRFs-NIPS2022](#NeRFs-NIPS2022) : 12
 
 
@@ -48,59 +48,34 @@
 
 ## NeRFs-NIPS2021
 
-> - 收集来源：
-
-
-
-
-
-## Comming soon.
-
----
-
-[] 
-
-- Title：
-
-- Category：
-
-- Project: 
-
-- Code: 
-
-- Paper: 
-
-- Abstract：
-
-  > **
-
-- Figure：
-
-
-
-
+> - 当前论文数：4
+> - 收集来源：[NeRF-NIPS2021](https://proceedings.neurips.cc/paper/2021)   Search: “nerf” OR “radiance” OR “slam”
 
 
 
 ---
 
-[] 
+[1] H-NeRF: Neural Radiance Fields for Rendering and Temporal Reconstruction of Humans in Motion 
 
-- Title：
+- Title：H-NeRF：用于运动中人体渲染和时间重建的神经辐射场
 
-- Category：
+- Category：人体动态建模
 
-- Project: 
+- Project: none
 
-- Code: 
+- Code: none
 
-- Paper: 
+- Paper: https://arxiv.org/pdf/2110.13746.pdf
 
 - Abstract：
 
-  > **
+  > *We present neural radiance fields for rendering and temporal (4D) reconstruction of humans in motion (H-NeRF), as captured by a sparse set of cameras or even from a monocular video. Our approach combines ideas from neural scene representation, novel-view synthesis, and implicit statistical geometric human representations, coupled using novel loss functions. Instead of learning a radiance field with a uniform occupancy prior, we constrain it by a structured implicit human body model, represented using signed distance functions. This allows us to robustly fuse information from sparse views and generalize well beyond the poses or views observed in training. Moreover, we apply geometric constraints to co-learn the structure of the observed subject -- including both body and clothing -- and to regularize the radiance field to geometrically plausible solutions. Extensive experiments on multiple datasets demonstrate the robustness and the accuracy of our approach, its generalization capabilities significantly outside a small training set of poses and views, and statistical extrapolation beyond the observed shape.*
 
 - Figure：
+
+![image-20230411212137280](NeRFs-NIPS.assets/image-20230411212137280.png)
+
+![image-20230411212202216](NeRFs-NIPS.assets/image-20230411212202216.png)
 
 
 
@@ -112,23 +87,27 @@
 
 ---
 
-[] 
+[2] A-NeRF: Articulated Neural Radiance Fields for Learning Human Shape, Appearance, and Pose
 
-- Title：
+- Title：A-NeRF：用于学习人体形状、外观和姿势的铰接式神经辐射场
 
-- Category：
+- Category：人体动态建模
 
-- Project: 
+- Project: https://lemonatsu.github.io/anerf/
 
-- Code: 
+- Code: https://github.com/LemonATsu/A-NeRF
 
-- Paper: 
+- Paper: https://arxiv.org/pdf/2102.06199.pdf
 
 - Abstract：
 
-  > **
+  > *While deep learning reshaped the classical motion capture pipeline with feed-forward networks, generative models are required to recover fine alignment via iterative refinement. Unfortunately, the existing models are usually hand-crafted or learned in controlled conditions, only applicable to limited domains. We propose a method to learn a generative neural body model from unlabelled monocular videos by extending Neural Radiance Fields (NeRFs). We equip them with a skeleton to apply to time-varying and articulated motion. A key insight is that implicit models require the inverse of the forward kinematics used in explicit surface models. Our reparameterization defines spatial latent variables relative to the pose of body parts and thereby overcomes ill-posed inverse operations with an overparameterization. This enables learning volumetric body shape and appearance from scratch while jointly refining the articulated pose; all without ground truth labels for appearance, pose, or 3D shape on the input videos. When used for novel-view-synthesis and motion capture, our neural model improves accuracy on diverse datasets. Project website: [this https URL](https://lemonatsu.github.io/anerf/) .*
 
 - Figure：
+
+![image-20230411212305007](NeRFs-NIPS.assets/image-20230411212305007.png)
+
+![image-20230411212414228](NeRFs-NIPS.assets/image-20230411212414228.png)
 
 
 
@@ -140,23 +119,27 @@
 
 ---
 
-[] 
+[3] Neural Human Performer: Learning Generalizable Radiance Fields for Human Performance Rendering
 
-- Title：
+- Title：神经人类表演者：学习人类表演渲染的可推广辐射场
 
-- Category：
+- Category：人体动态建模
 
-- Project: 
+- Project: https://youngjoongunc.github.io/nhp/
 
-- Code: 
+- Code: https://github.com/YoungJoongUNC/Neural_Human_Performer
 
-- Paper: 
+- Paper: https://arxiv.org/pdf/2109.07448.pdf
 
 - Abstract：
 
-  > **
+  > *In this paper, we aim at synthesizing a free-viewpoint video of an arbitrary human performance using sparse multi-view cameras. Recently, several works have addressed this problem by learning person-specific neural radiance fields (NeRF) to capture the appearance of a particular human. In parallel, some work proposed to use pixel-aligned features to generalize radiance fields to arbitrary new scenes and objects. Adopting such generalization approaches to humans, however, is highly challenging due to the heavy occlusions and dynamic articulations of body parts. To tackle this, we propose Neural Human Performer, a novel approach that learns generalizable neural radiance fields based on a parametric human body model for robust performance capture. Specifically, we first introduce a temporal transformer that aggregates tracked visual features based on the skeletal body motion over time. Moreover, a multi-view transformer is proposed to perform cross-attention between the temporally-fused features and the pixel-aligned features at each time step to integrate observations on the fly from multiple views. Experiments on the ZJU-MoCap and AIST datasets show that our method significantly outperforms recent generalizable NeRF methods on unseen identities and poses. The video results and code are available at [this https URL](https://youngjoongunc.github.io/nhp).*
 
 - Figure：
+
+![image-20230411212635406](NeRFs-NIPS.assets/image-20230411212635406.png)
+
+![image-20230411212706966](NeRFs-NIPS.assets/image-20230411212706966.png)
 
 
 
@@ -168,53 +151,29 @@
 
 ---
 
-[] 
+[4] TöRF: Time-of-Flight Radiance Fields for Dynamic Scene View Synthesis
 
-- Title：
+- Title：TöRF：用于动态场景视图合成的飞行时间辐射场
 
-- Category：
+- Category：动态场景
 
-- Project: 
+- Project: https://imaging.cs.cmu.edu/torf/
 
-- Code: 
+- Code: https://github.com/breuckelen/torf
 
-- Paper: 
-
-- Abstract：
-
-  > **
-
-- Figure：
-
-
-
-
-
-
-
-
-
----
-
-[] 
-
-- Title：
-
-- Category：
-
-- Project: 
-
-- Code: 
-
-- Paper: 
+- Paper: https://arxiv.org/pdf/2109.15271.pdf
 
 - Abstract：
 
-  > **
+  > *Neural networks can represent and accurately reconstruct radiance fields for static 3D scenes (e.g., NeRF). Several works extend these to dynamic scenes captured with monocular video, with promising performance. However, the monocular setting is known to be an under-constrained problem, and so methods rely on data-driven priors for reconstructing dynamic content. We replace these priors with measurements from a time-of-flight (ToF) camera, and introduce a neural representation based on an image formation model for continuous-wave ToF cameras. Instead of working with processed depth maps, we model the raw ToF sensor measurements to improve reconstruction quality and avoid issues with low reflectance regions, multi-path interference, and a sensor's limited unambiguous depth range. We show that this approach improves robustness of dynamic scene reconstruction to erroneous calibration and large motions, and discuss the benefits and limitations of integrating RGB+ToF sensors that are now available on modern smartphones.*
 
 - Figure：
 
+![image-20230411212914085](NeRFs-NIPS.assets/image-20230411212914085.png)
 
+![image-20230411213246636](NeRFs-NIPS.assets/image-20230411213246636.png)
+
+![image-20230411213312135](NeRFs-NIPS.assets/image-20230411213312135.png)
 
 
 
@@ -241,34 +200,6 @@
   > **
 
 - Figure：
-
-
-
-
-
-
-
----
-
-[] 
-
-- Title：
-
-- Category：
-
-- Project: 
-
-- Code: 
-
-- Paper: 
-
-- Abstract：
-
-  > **
-
-- Figure：
-
-
 
 
 
@@ -280,7 +211,8 @@
 
 ## NeRFs-NIPS2022
 
-> 收集来源：[NIPS 2022 Papers](https://nips.cc/virtual/2022/papers.html?filter=titles)  Search: “nerf” OR “radiance” OR “slam”
+> - 当前论文数：12
+> - 收集来源：[NIPS 2022 Papers](https://nips.cc/virtual/2022/papers.html?filter=titles)   Search: “nerf” OR “radiance” OR “slam”
 
 
 

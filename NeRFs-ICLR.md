@@ -1,6 +1,15 @@
 # NeRFs-ICLR
 
-> 当前论文数：2
+> - 当前论文数：2
+>
+> - [NeRFs-ICLR2022](#NeRFs-ICLR2022)
+> - [NeRFs-ICLR2023](#NeRFs-ICLR2023)
+
+
+
+
+
+
 
 
 
@@ -112,6 +121,46 @@
 
 
 
+## NeRFs-ICLR2023
+
+
+
+
+
+---
+
+[1] DreamFusion: Text-to-3D using 2D Diffusion
+
+- Title：DreamFusion：使用2D扩散的文本到3D
+
+- Category：Text-to-3D,扩散模型
+
+- Project: https://dreamfusion3d.github.io/
+
+- Code: none
+
+- Paper: https://arxiv.org/pdf/2209.14988.pdf
+
+- Abstract：
+
+  > *Recent breakthroughs in text-to-image synthesis have been driven by diffusion models trained on billions of image-text pairs. Adapting this approach to 3D synthesis would require large-scale datasets of labeled 3D data and efficient architectures for denoising 3D data, neither of which currently exist. In this work, we circumvent these limitations by using a pretrained 2D text-to-image diffusion model to perform text-to-3D synthesis. We introduce a loss based on probability density distillation that enables the use of a 2D diffusion model as a prior for optimization of a parametric image generator. Using this loss in a DeepDream-like procedure, we optimize a randomly-initialized 3D model (a Neural Radiance Field, or NeRF) via gradient descent such that its 2D renderings from random angles achieve a low loss. The resulting 3D model of the given text can be viewed from any angle, relit by arbitrary illumination, or composited into any 3D environment. Our approach requires no 3D training data and no modifications to the image diffusion model, demonstrating the effectiveness of pretrained image diffusion models as priors.*
+
+- Figure：
+
+![image-20230411205152459](NeRFs-ICLR.assets/image-20230411205152459.png)
+
+![image-20230411205536986](NeRFs-ICLR.assets/image-20230411205536986.png)
+
+
+
+
+
+
+
+
+
+
+
 ---
 
 [] 
@@ -131,6 +180,122 @@
   > **
 
 - Figure：
+
+
+
+
+
+
+
+
+
+---
+
+[] 
+
+- Title：
+
+- Category：
+
+- Project: 
+
+- Code: 
+
+- Paper: 
+
+- Abstract：
+
+  > **
+
+- Figure：
+
+
+
+
+
+
+
+
+
+---
+
+[] 
+
+- Title：
+
+- Category：
+
+- Project: 
+
+- Code: 
+
+- Paper: 
+
+- Abstract：
+
+  > **
+
+- Figure：
+
+
+
+
+
+
+
+
+
+---
+
+[] 
+
+- Title：
+
+- Category：
+
+- Project: 
+
+- Code: 
+
+- Paper: 
+
+- Abstract：
+
+  > **
+
+- Figure：
+
+
+
+
+
+
+
+
+
+---
+
+[] 
+
+- Title：
+
+- Category：
+
+- Project: 
+
+- Code: 
+
+- Paper: 
+
+- Abstract：
+
+  > **
+
+- Figure：
+
+
+
+
 
 
 
