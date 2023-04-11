@@ -2622,7 +2622,7 @@
 - 题目：BAD-NeRF：束调整的去模糊神经辐射场
 - 分类：Bundle-Adjusting,去模糊
 - Project: none
-- Code: none
+- Code: https://github.com/WU-CVGL/BAD-NeRF
 - Paper: https://arxiv.org/pdf/2211.12853.pdf
 - 摘要： 
 
