@@ -1,7 +1,7 @@
 # NeRFs-CVPR2023
 
 > - 注：本来以为就60多篇，所以没有按照类别整理。现在有115篇，之后会按照类别重新整理1遍:smile:
-> - 当前lun'wen
+> - 当前论文数：115
 > - 收集来源：[CVPR 2023 Accepted Papers](https://cvpr2023.thecvf.com/Conferences/2023/AcceptedPapers)
 
 
