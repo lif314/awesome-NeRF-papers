@@ -1,7 +1,7 @@
 # NeRFs-CVPR2023
 
-> - 注：本来以为就60多篇，所以没有按照类别整理。现在有115篇，之后会按照类别重新整理1遍:smile:
-> - 当前论文数：115
+> - 注：本来以为就60多篇，所以没有按照类别整理。现在有116篇，之后会按照类别重新整理1遍:smile:
+> - 当前论文数：116
 > - 收集来源：[CVPR 2023 Accepted Papers](https://cvpr2023.thecvf.com/Conferences/2023/AcceptedPapers)
 
 
@@ -3019,21 +3019,25 @@
 
 ---
 
-[116] 
+[116] Representing Volumetric Videos as Dynamic MLP Maps
 
-- 题目：
+- 题目：将体积视频表示为动态MLP映射
 
-- 分类：
-- Project: 
-- Code: 
-- Paper: 
+- 分类：动态人体建模
+- Project: https://zju3dv.github.io/mlp_maps/
+- Code: https://github.com/zju3dv/mlp_maps
+- Paper: [pdf](https://zjueducn-my.sharepoint.com/personal/pengsida_zju_edu_cn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fpengsida%5Fzju%5Fedu%5Fcn%2FDocuments%2Fmlp%5Fmaps%2FMLP%5FMaps%2Epdf&parent=%2Fpersonal%2Fpengsida%5Fzju%5Fedu%5Fcn%2FDocuments%2Fmlp%5Fmaps&ga=1)
 - 摘要： 
 
-> **
+> *This paper introduces a novel representation of volumetric videos for real-time view synthesis of dynamic scenes. Recent advances in neural scene representations demonstrate their remarkable capability to model and render complex static scenes, but extending them to represent dynamic scenes is not straightforward due to their slow rendering speed or high storage cost. To solve this problem, our key idea is to represent the radiance field of each frame as a set of shallow MLP networks whose parameters are stored in 2D grids, called MLP maps, and dynamically predicted by a 2D CNN decoder shared by all frames. Representing 3D scenes with shallow MLPs significantly improves the rendering speed, while dynamically predicting MLP parameters with a shared 2D CNN instead of explicitly storing them leads to low storage cost. Experiments show that the proposed approach achieves state-of-the-art rendering quality on the NHR and ZJU-MoCap datasets, while being efficient for real-time rendering with a speed of 41.7 fps for 512x512 images on an RTX 3090 GPU.*
 
 - 图示
 
+![image-20230412140633516](NeRFs-CVPR2023.assets/image-20230412140633516.png)
 
+![img](NeRFs-CVPR2023.assets/base_idea.png)
+
+![image-20230412140716290](NeRFs-CVPR2023.assets/image-20230412140716290.png)
 
 
 
