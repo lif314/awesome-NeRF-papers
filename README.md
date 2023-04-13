@@ -31,10 +31,11 @@
   - [NeRFs-ECCV2022: Comming soon](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-ECCV2022.md)
   - [NeRFs-ECCV2020: 1(开山之作)](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRF-ECCV2020.md)
 
-- 推荐Repo:
+- Recommended repos:
 
   - [awesome-NeRF](https://github.com/awesome-NeRF/awesome-NeRF/)
 
   - [CVPR2023-Papers-with-Code](https://github.com/amusi/CVPR2023-Papers-with-Code)
 
+- [2022年顶会 accepted papers list](https://blog.csdn.net/lijinde07/article/details/122651155)
 
