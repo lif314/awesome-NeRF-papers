@@ -38,7 +38,3 @@
 - [2022年顶会 accepted papers list](https://blog.csdn.net/lijinde07/article/details/122651155)
 
 - [2021年顶会 accepted papers list](https://blog.csdn.net/lijinde07/article/details/112171466)
-
-## 寄语
-
-> “这些大神们一篇篇里程碑意义的工作，在不断地为CV的大厦筑起更高的楼层；尽管我们普通研究者不是筑楼的中坚力量，但当我们站在前人奠基的楼层之上添砖加瓦，就已经离浩瀚苍穹更进一步了。”       — [意老师](https://space.bilibili.com/355024665)
