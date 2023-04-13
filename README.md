@@ -28,7 +28,7 @@
 
 - NeRF on ECCV: 
 
-  - [NeRFs-ECCV2022: Comming soon](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-ECCV2022.md)
+  - [NeRFs-ECCV2022: 28](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-ECCV2022.md)
   - [NeRFs-ECCV2020: 1(开山之作)](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRF-ECCV2020.md)
 
 - Recommended repos:
