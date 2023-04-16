@@ -1,7 +1,7 @@
 # NeRFs-CVPR2023
 
-> - 注：本来以为就60多篇，所以没有按照类别整理。现在有117篇，之后会按照类别重新整理1遍:smile:
-> - 当前论文数：117
+> - 注：本来以为就60多篇，所以没有按照类别整理。现在有118篇，之后会按照类别重新整理1遍:smile:
+> - 当前论文数：118
 > - 收集来源：[CVPR 2023 Accepted Papers](https://cvpr2023.thecvf.com/Conferences/2023/AcceptedPapers)
 
 
@@ -29,12 +29,6 @@
 ![image-20230410133501666](NeRFs-CVPR2023.assets/image-20230410133501666.png)
 
 ![image-20230407193250730](NeRFs-CVPR2023.assets/image-20230407193250730.png)
-
-
-
-
-
-
 
 
 
@@ -271,7 +265,7 @@
 [12] Shape, Pose, and Appearance from a Single Image via Bootstrapped Radiance Field Inversion
 
 - Title：通过自举辐射场反演从单个图像中获取形状、姿势和外观
-- Category：单图3D重建
+- Category：单视图
 - Code: https://github.com/google-research/nerf-from-image
 - Paper: https://arxiv.org/pdf/2211.11674.pdf
 - Abstract： 
@@ -3047,56 +3041,42 @@
 
 [117] NeAT: Learning Neural Implicit Surfaces with Arbitrary Topologies from Multi-view Images
 
-<<<<<<< HEAD
-- Title：
-
-- Category：
-- Project: 
-- Code: 
-- Paper: 
-- Abstract： 
-=======
-- 题目：一种创新的可微分渲染管线，支持从多视角图片重建的任意隐式曲面，并支持快速导出高质量三维模型。
-
-- 分类：三维重建
+- Title：一种创新的可微分渲染管线，支持从多视角图片重建的任意隐式曲面，并支持快速导出高质量三维模型。Category：
 - Project: https://xmeng525.github.io/xiaoxumeng.github.io/projects/cvpr23_neat
 - Code: https://github.com/xmeng525/NeAT
 - Paper: https://arxiv.org/abs/2303.12012
-- 摘要：
->>>>>>> eb90af68bb55b65d233c4cbf6d216d87eeadc920
-
+- Abstract: 
 > *Recent progress in neural implicit functions has set new state-of-the-art in reconstructing high-fidelity 3D shapes from a collection of images. > However, these approaches are limited to closed surfaces as they require the surface to be represented by a signed distance field. In this paper, we propose NeAT, a new neural rendering framework that can learn implicit surfaces with arbitrary topologies from multi-view images. In particular, NeAT represents the 3D surface as a level set of a signed distance function (SDF) with a validity branch for estimating the surface existence probability at the query positions. We also develop a novel neural volume rendering method, which uses SDF and validity to calculate the volume opacity and avoids rendering points with low validity. NeAT supports easy field-to-mesh conversion using the classic Marching Cubes algorithm. Extensive experiments on DTU, MGN, and Deep Fashion 3D datasets indicate that our approach is able to faithfully reconstruct both watertight and non-watertight surfaces. In particular, NeAT significantly outperforms the state-of-the-art methods in the task of open surface reconstruction both quantitatively and qualitatively.* 
 
-<<<<<<< HEAD
 - Figure
+  ![NeAT_Teaser](https://xmeng525.github.io/xiaoxumeng.github.io/projects/cvpr23_neat/teaser.png)
 
 
 
 
 
-=======
-- 图示
-![NeAT_Teaser](https://xmeng525.github.io/xiaoxumeng.github.io/projects/cvpr23_neat/teaser.png)
->>>>>>> eb90af68bb55b65d233c4cbf6d216d87eeadc920
+
 
 
 ---
 
-[118] 
+[118] SparseFusion: Distilling View-conditioned Diffusion for 3D Reconstruction
 
-- Title：
+- Title：SparseFusion：蒸馏 View-conditioned Diffusion 用于 3D 重建
 
-- Category：
-- Project: 
-- Code: 
-- Paper: 
+- Category：稀疏视图,扩散模型
+- Project: https://sparsefusion.github.io/
+- Code: https://github.com/zhizdev/sparsefusion
+- Paper: https://arxiv.org/pdf/2212.00792.pdf
 - Abstract： 
 
-> **
+> *We propose SparseFusion, a sparse view 3D reconstruction approach that unifies recent advances in neural rendering and probabilistic image generation. Existing approaches typically build on neural rendering with re-projected features but fail to generate unseen regions or handle uncertainty under large viewpoint changes. Alternate methods treat this as a (probabilistic) 2D synthesis task, and while they can generate plausible 2D images, they do not infer a consistent underlying 3D. However, we find that this trade-off between 3D consistency and probabilistic image generation does not need to exist. In fact, we show that geometric consistency and generative inference can be complementary in a mode-seeking behavior. By distilling a 3D consistent scene representation from a view-conditioned latent diffusion model, we are able to recover a plausible 3D representation whose renderings are both accurate and realistic. We evaluate our approach across 51 categories in the CO3D dataset and show that it outperforms existing methods, in both distortion and perception metrics, for sparse-view novel view synthesis.*
 
 - Figure
 
+![image-20230416114513218](NeRFs-CVPR2023.assets/image-20230416114513218.png)
 
+![image-20230416114533781](NeRFs-CVPR2023.assets/image-20230416114533781.png)
 
 
 
