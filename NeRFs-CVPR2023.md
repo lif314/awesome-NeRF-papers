@@ -621,7 +621,7 @@
 [26] ABLE-NeRF: Attention-Based Rendering with Learnable Embeddings for Neural Radiance Field
 
 - Title：ABLE-NeRF：基于注意力的神经辐射场可学习嵌入渲染
-- Category：注意力机制
+- Category：注意力机制,去模糊
 - Code: https://github.com/TangZJ/able-nerf
 - Paper: https://arxiv.org/pdf/2303.13817.pdf
 - Abstract： 
