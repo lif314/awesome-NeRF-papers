@@ -1,7 +1,6 @@
 # NeRFs-CVPR2023
 
-> - 注：本来以为就60多篇，所以没有按照类别整理。现在有118篇，之后会按照类别重新整理1遍:smile:
-> - 当前论文数：118
+> - 当前论文数：119
 > - 收集来源：[CVPR 2023 Accepted Papers](https://cvpr2023.thecvf.com/Conferences/2023/AcceptedPapers)
 
 
@@ -3084,21 +3083,23 @@
 
 ---
 
-[119] 
+[119] NeuralField-LDM: Scene Generation with Hierarchical Latent Diffusion Models
 
-- Title：
+- Title：NeuralField LDM：具有分层潜在扩散模型的场景生成
 
-- Category：
-- Project: 
-- Code: 
-- Paper: 
+- Category：场景生成
+- Project: https://research.nvidia.com/labs/toronto-ai/NFLDM/
+- Code: none
+- Paper: https://research.nvidia.com/labs/toronto-ai/NFLDM/assets/paper.pdf
 - Abstract： 
 
-> **
+> *Automatically generating high-quality real world 3D scenes is of enormous interest for applications such as virtual reality and robotics simulation. Towards this goal, we introduce NeuralField-LDM, a generative model capable of synthesizing complex 3D environments. We leverage Latent Diffusion Models that have been successfully utilized for efficient high-quality 2D content creation. We first train a scene auto-encoder to express a set of image and pose pairs as a neural field, represented as density and feature voxel grids that can be projected to produce novel views of the scene. To further compress this representation, we train a latent-autoencoder that maps the voxel grids to a set of latent representations. A hierarchical diffusion model is then fit to the latents to complete the scene generation pipeline. We achieve a substantial improvement over existing state- of-the-art scene generation models. Additionally, we show how NeuralField-LDM can be used for a variety of 3D content creation applications, including conditional scene generation, scene inpainting and scene style manipulation.*
 
 - Figure
 
+![image-20230421122954616](NeRFs-CVPR2023.assets/image-20230421122954616.png)
 
+![image-20230421123020398](NeRFs-CVPR2023.assets/image-20230421123020398.png)
 
 
 
