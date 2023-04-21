@@ -2,7 +2,7 @@
 
 
 
-## [NeRFs-CVPR2023: 115 :computer_mouse:](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-CVPR2023.md)
+## [NeRFs-CVPR2023: 119 :computer_mouse:](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-CVPR2023.md)
 
 
 
@@ -12,7 +12,7 @@
   - [NeRFs-CVPR2022: 37](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-CVPR2022.md)
   - [NeRFs-CVPR2023: 119](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-CVPR2023.md)
 
-  ![nerf-cvpr](NeRFs-CVPR2023.assets/nerf-cvpr.png)
+  ![nerf-cvpr](NeRFs-CVPR2023.assets/nerf_cvpr.png)
 
 - NeRF on NIPS：[NeRFs-NIPS: 17](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-NIPS.md)
 
