@@ -1,6 +1,6 @@
 # NeRFs-CVPR2022
 
-> - 当前论文数：37
+> - 当前论文数：38
 > - 收集来源：[CVPR 2022 open access](https://openaccess.thecvf.com/CVPR2022?day=all)  注：搜索词(“nerf” OR “radiance”)
 
 
@@ -1203,7 +1203,37 @@
 
 ---
 
-[38] 
+[38] Neural Rays for Occlusion-aware Image-based Rendering
+
+- Title：用于基于图像的遮挡感知渲染的神经射线
+
+- Category：场景边界
+
+- Project: https://liuyuan-pal.github.io/NeuRay/
+
+- Code: https://github.com/liuyuan-pal/NeuRay
+
+- Paper: https://arxiv.org/pdf/2107.13421.pdf
+
+- Abstract：
+
+  > *We present a new neural representation, called Neural Ray (NeuRay), for the novel view synthesis task. Recent works construct radiance fields from image features of input views to render novel view images, which enables the generalization to new scenes. However, due to occlusions, a 3D point may be invisible to some input views. On such a 3D point, these generalization methods will include inconsistent image features from invisible views, which interfere with the radiance field construction. To solve this problem, we predict the visibility of 3D points to input views within our NeuRay representation. This visibility enables the radiance field construction to focus on visible image features, which significantly improves its rendering quality. Meanwhile, a novel consistency loss is proposed to refine the visibility in NeuRay when finetuning on a specific scene. Experiments demonstrate that our approach achieves state-of-the-art performance on the novel view synthesis task when generalizing to unseen scenes and outperforms per-scene optimization methods after finetuning.*
+
+- Figure：
+
+![image-20230422190335865](NeRFs-CVPR2022.assets/image-20230422190335865.png)
+
+![image-20230422190414268](NeRFs-CVPR2022.assets/image-20230422190414268.png)
+
+
+
+
+
+
+
+---
+
+[39] 
 
 - Title：
 
@@ -1220,6 +1250,3 @@
   > **
 
 - Figure：
-
-
-

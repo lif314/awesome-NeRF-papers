@@ -3107,7 +3107,33 @@
 
 ---
 
-[120] 
+[120] TensoIR: Tensorial Inverse Rendering
+
+- Title：TensoIR：张量逆渲染
+
+- Category：逆渲染, PBR
+- Project: https://haian-jin.github.io/TensoIR/
+- Code: soon
+- Paper: https://arxiv.org/pdf/2304.12461.pdf
+- Abstract： 
+
+> *We propose TensoIR, a novel inverse rendering approach based on tensor factorization and neural fields. Unlike previous works that use purely MLP-based neural fields, thus suffering from low capacity and high computation costs, we extend TensoRF, a state-of-the-art approach for radiance field modeling, to estimate scene geometry, surface reflectance, and environment illumination from multi-view images captured under unknown lighting conditions. Our approach jointly achieves radiance field reconstruction and physically-based model estimation, leading to photo-realistic novel view synthesis and relighting results. Benefiting from the efficiency and extensibility of the TensoRF-based representation, our method can accurately model secondary shading effects (like shadows and indirect lighting) and generally support input images captured under single or multiple unknown lighting conditions. The low-rank tensor representation allows us to not only achieve fast and compact reconstruction but also better exploit shared information under an arbitrary number of capturing lighting conditions. We demonstrate the superiority of our method to baseline methods qualitatively and quantitatively on various challenging synthetic and real-world scenes.*
+
+- Figure
+
+![image-20230428135223243](NeRFs-CVPR2023.assets/image-20230428135223243.png)
+
+![image-20230428135246680](NeRFs-CVPR2023.assets/image-20230428135246680.png)
+
+
+
+
+
+
+
+---
+
+[121] 
 
 - Title：
 
@@ -3120,10 +3146,6 @@
 > **
 
 - Figure
-
-
-
-
 
 
 
