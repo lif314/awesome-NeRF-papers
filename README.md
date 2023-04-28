@@ -2,7 +2,7 @@
 
 
 
-## [NeRFs-CVPR2023: 119 :computer_mouse:](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-CVPR2023.md)
+## [NeRFs-CVPR2023: 120:computer_mouse:](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-CVPR2023.md)
 
 
 
@@ -10,7 +10,7 @@
 
   - [NeRFs-CVPR2021: 7](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-CVPR2021.md)
   - [NeRFs-CVPR2022: 37](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-CVPR2022.md)
-  - [NeRFs-CVPR2023: 119](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-CVPR2023.md)
+  - [NeRFs-CVPR2023: 120](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-CVPR2023.md)
 
   ![nerf-cvpr](NeRFs-CVPR2023.assets/nerf_cvpr.png)
 

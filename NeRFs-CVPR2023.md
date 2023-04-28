@@ -1,6 +1,6 @@
 # NeRFs-CVPR2023
 
-> - 当前论文数：119
+> - 当前论文数：120
 > - 收集来源：[CVPR 2023 Accepted Papers](https://cvpr2023.thecvf.com/Conferences/2023/AcceptedPapers)
 
 
