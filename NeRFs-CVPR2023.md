@@ -1,6 +1,6 @@
 # NeRFs-CVPR2023
 
-> - 当前论文数：120
+> - 当前论文数：121
 > - 收集来源：[CVPR 2023 Accepted Papers](https://cvpr2023.thecvf.com/Conferences/2023/AcceptedPapers)
 
 
@@ -3133,7 +3133,29 @@
 
 ---
 
-[121] 
+[121] Consistent View Synthesis with Pose-Guided Diffusion Models
+
+- Title：使用姿态引导扩散模型的一致视图合成
+
+- Category：视图合成 NeRF-GAN NeRF-Diffusion
+- Project: https://poseguided-diffusion.github.io/
+- Code: none
+- Paper: https://arxiv.org/pdf/2303.17598.pdf
+- Abstract： 
+
+> *Novel view synthesis from a single image has been a cornerstone problem for many Virtual Reality applications that provide immersive experiences. However, most existing techniques can only synthesize novel views within a limited range of camera motion or fail to generate consistent and high-quality novel views under significant camera movement. In this work, we propose a pose-guided diffusion model to generate a consistent long-term video of novel views from a single image. We design an attention layer that uses epipolar lines as constraints to facilitate the association between different viewpoints. Experimental results on synthetic and real-world datasets demonstrate the effectiveness of the proposed diffusion model against state-of-the-art transformer-based and GAN-based approaches.*
+
+- Figure
+
+![image-20230508084925764](NeRFs-CVPR2023.assets/image-20230508084925764.png)
+
+![image-20230508084950275](NeRFs-CVPR2023.assets/image-20230508084950275.png)
+
+
+
+
+
+[122] 
 
 - Title：
 
