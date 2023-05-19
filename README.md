@@ -45,6 +45,6 @@
 
 
 
-![stars](https://starchar.cc/lif314/NeRFs-CVPR2023)
+![stars](https://starchart.cc/lif314/NeRFs-CVPR2023)
 
 
