@@ -38,7 +38,7 @@
 - Title：SCADE：来自具有歧义感知深度估计的空间雕刻的NeRF
 - Category：深度监督,稀疏视图
 - Project: https://scade-spacecarving-nerfs.github.io/
-- Code: soon
+- Code: https://github.com/mikacuy/scade
 - Paper: https://arxiv.org/pdf/2303.13582.pdf
 - Abstract： 
 
@@ -174,10 +174,6 @@
 ![image-20230410133740912](NeRFs-CVPR2023.assets/image-20230410133740912.png)
 
 ![image-20230407202505972](NeRFs-CVPR2023.assets/image-20230407202505972.png)
-
-
-
-
 
 
 
@@ -442,7 +438,7 @@
 - Title：Magic3D：高分辨率文本到3D内容创建
 - Category：Text-to-3D
 - Project: https://research.nvidia.com/labs/dir/magic3d/
-- Code: none
+- Code: https://github.com/threestudio-project/threestudio [unofficial]
 - Paper: https://arxiv.org/pdf/2211.10440.pdf
 - Abstract： 
 
@@ -698,7 +694,7 @@
 - Title：SPARF：来自稀疏和噪声位姿的神经辐射场
 - Category：稀疏视图，位姿不准
 - Project: http://prunetruong.com/sparf.github.io/
-- Code: None
+- Code: https://github.com/google-research/sparf
 - Paper: https://arxiv.org/pdf/2211.11738.pdf
 - Abstract： 
 
@@ -935,7 +931,7 @@
 - Title：SPIn-NeRF：用神经辐射场进行多视角分割和知觉绘画
 - Category：可编辑(三维绘画)，移除物体
 - Project: https://spinnerf3d.github.io/
-- Code: none
+- Code: https://github.com/SamsungLabs/SPIn-NeRF
 - Paper: https://arxiv.org/pdf/2211.12254.pdf
 - Abstract： 
 
@@ -1083,7 +1079,7 @@
 - Title：NoPe-NeRF：优化无位姿先验的神经辐射场
 - Category：无位姿
 - Project: https://nope-nerf.active.vision/
-- Code: soon
+- Code: https://github.com/ActiveVisionLab/nope-nerf/
 - Paper: https://arxiv.org/pdf/2212.07388.pdf
 - Abstract： 
 
@@ -1207,7 +1203,7 @@
 - Title：NeRFLiX：通过学习退化驱动的视点之间的MiXer来实现高质量的神经视图合成
 - Category：逼真合成
 - Project: https://redrock303.github.io/nerflix/
-- Code: soon
+- Code: https://github.com/redrock303/NeRFLiX_CPVR2023
 - Paper: https://arxiv.org/pdf/2303.06919.pdf
 - Abstract： 
 
@@ -1446,7 +1442,7 @@
 - Title：EditableNeRF：按关键点编辑拓扑变化的神经辐射场
 - Category：可编辑
 - Project: https://chengwei-zheng.github.io/EditableNeRF/
-- Code: soon
+- Code: https://github.com/chengwei-zheng/EditableNeRF_cvpr23
 - Paper: https://arxiv.org/pdf/2212.04247.pdf
 - Abstract： 
 
@@ -1798,20 +1794,20 @@
 
 - Title：ReRF：用于流式自由视点视频的神经残差辐射场
 - Category：动态场景
-- Project: none
+- Project: https://aoliao12138.github.io/ReRF/
 - Group: https://www.xu-lan.com/research.html
 - Code: soon
-- Paper: soon
+- Paper: https://arxiv.org/pdf/2304.04452.pdf
 - Video: https://www.youtube.com/watch?v=dFvwaI1h-nc
 - Abstract： 
 
-> 
+> *The success of the Neural Radiance Fields (NeRFs) for modeling and free-view rendering static objects has inspired numerous attempts on dynamic scenes. Current techniques that utilize neural rendering for facilitating free-view videos (FVVs) are restricted to either offline rendering or are capable of processing only brief sequences with minimal motion. In this paper, we present a novel technique, Residual Radiance Field or ReRF, as a highly compact neural representation to achieve real-time FVV rendering on long-duration dynamic scenes. ReRF explicitly models the residual information between adjacent timestamps in the spatial-temporal feature space, with a global coordinate-based tiny MLP as the feature decoder. Specifically, ReRF employs a compact motion grid along with a residual feature grid to exploit inter-frame feature similarities. We show such a strategy can handle large motions without sacrificing quality. We further present a sequential training scheme to maintain the smoothness and the sparsity of the motion/residual grids. Based on ReRF, we design a special FVV codec that achieves three orders of magnitudes compression rate and provides a companion ReRF player to support online streaming of long-duration FVVs of dynamic scenes. Extensive experiments demonstrate the effectiveness of ReRF for compactly representing dynamic radiance fields, enabling an unprecedented free-viewpoint viewing experience in speed and quality.*
 
 - Figure
 
+![image-20230617072731769](E:\ResearchFields\NeRFs-CVPR2023\NeRFs-CVPR2023.assets\image-20230617072731769.png)
 
-
-
+![image-20230617072800074](E:\ResearchFields\NeRFs-CVPR2023\NeRFs-CVPR2023.assets\image-20230617072800074.png)
 
 
 
@@ -1822,14 +1818,18 @@
 - Title：Co-SLAM：神经实时SLAM的联合坐标和稀疏参数编码
 - Category：NeRF-based SLAM
 - Group: https://jingwenwang95.github.io/resume/
-- Project: 
-- Code: 
-- Paper: 
+- Project: https://hengyiwang.github.io/projects/CoSLAM
+- Code: https://github.com/HengyiWang/Co-SLAM
+- Paper: https://arxiv.org/pdf/2304.14377.pdf
 - Abstract： 
 
-> 
+> *We present Co-SLAM, a neural RGB-D SLAM system based on a hybrid representation, that performs robust camera tracking and high-fidelity surface reconstruction in real time. Co-SLAM represents the scene as a multi-resolution hash-grid to exploit its high convergence speed and ability to represent high-frequency local features. In addition, Co-SLAM incorporates one-blob encoding, to encourage surface coherence and completion in unobserved areas. This joint parametric-coordinate encoding enables real-time and robust performance by bringing the best of both worlds: fast convergence and surface hole filling. Moreover, our ray sampling strategy allows Co-SLAM to perform global bundle adjustment over all keyframes instead of requiring keyframe selection to maintain a small number of active keyframes as competing neural SLAM approaches do. Experimental results show that Co-SLAM runs at 10-17Hz and achieves state-of-the-art scene reconstruction results, and competitive tracking performance in various datasets and benchmarks (ScanNet, TUM, Replica, Synthetic RGBD). Project page: [this https URL](https://hengyiwang.github.io/projects/CoSLAM)*
 
 - Figure
+
+![image-20230617073133443](E:\ResearchFields\NeRFs-CVPR2023\NeRFs-CVPR2023.assets\image-20230617073133443.png)
+
+![image-20230617073158849](E:\ResearchFields\NeRFs-CVPR2023\NeRFs-CVPR2023.assets\image-20230617073158849.png)
 
 
 
@@ -1877,15 +1877,25 @@
 *Xin Huang · Qi Zhang · Ying Feng · Xiaoyu Li · Xuan Wang · Qing Wang*
 
 - Title：可泛化辐射场表示的局部隐式射线函数
-- Category：
-- Project: 
-- Code: 
-- Paper: 
+- Category：可泛化视图合成
+- Project: https://xhuangcv.github.io/lirf/
+- Code: https://github.com/xhuangcv/lirf/
+- Paper: https://arxiv.org/pdf/2304.12746.pdf
 - Abstract： 
 
-> 
+> *We propose LIRF (Local Implicit Ray Function), a generalizable neural rendering approach for novel view rendering. Current generalizable neural radiance fields (NeRF) methods sample a scene with a single ray per pixel and may therefore render blurred or aliased views when the input views and rendered views capture scene content with different resolutions. To solve this problem, we propose LIRF to aggregate the information from conical frustums to construct a ray. Given 3D positions within conical frustums, LIRF takes 3D coordinates and the features of conical frustums as inputs and predicts a local volumetric radiance field. Since the coordinates are continuous, LIRF renders high-quality novel views at a continuously-valued scale via volume rendering. Besides, we predict the visible weights for each input view via transformer-based feature matching to improve the performance in occluded areas. Experimental results on real-world scenes validate that our method outperforms state-of-the-art methods on novel view rendering of unseen scenes at arbitrary scales.*
 
 - Figure
+
+![image-20230617073518587](E:\ResearchFields\NeRFs-CVPR2023\NeRFs-CVPR2023.assets\image-20230617073518587.png)
+
+![image-20230617073537390](E:\ResearchFields\NeRFs-CVPR2023\NeRFs-CVPR2023.assets\image-20230617073537390.png)
+
+
+
+
+
+
 
 
 
