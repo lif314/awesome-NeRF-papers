@@ -46,4 +46,9 @@
 
 
 
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/lif314/NeRFs-CVPR2023.svg)](https://starchart.cc/lif314/NeRFs-CVPR2023)
+
+
 
