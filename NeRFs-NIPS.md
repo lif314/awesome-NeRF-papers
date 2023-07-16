@@ -113,10 +113,6 @@
 
 
 
-
-
-
-
 ---
 
 [3] Neural Human Performer: Learning Generalizable Radiance Fields for Human Performance Rendering
