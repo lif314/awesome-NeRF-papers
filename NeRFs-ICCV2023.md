@@ -1,4 +1,4 @@
-# NeRFs-ICCV2023asasjas
+# NeRFs-ICCV2023
 
 - #Papers: 4
 
