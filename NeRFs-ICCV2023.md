@@ -13,7 +13,7 @@
 - Abstract:
 > *Neural Radiance Field training can be accelerated through the use of grid-based representations in NeRF's learned mapping from spatial coordinates to colors and volumetric density. However, these grid-based approaches lack an explicit understanding of scale and therefore often introduce aliasing, usually in the form of jaggies or missing scene content. Anti-aliasing has previously been addressed by mip-NeRF 360, which reasons about sub-volumes along a cone rather than points along a ray, but this approach is not natively compatible with current grid-based techniques. We show how ideas from rendering and signal processing can be used to construct a technique that combines mip-NeRF 360 and grid-based models such as Instant NGP to yield error rates that are 8% - 77% lower than either prior technique, and that trains 24x faster than mip-NeRF 360.* 
 - Figure: 
-  ![image-20230716204429598](E:\ResearchFields\NeRFs-CVPR2023\NeRFs-ICCV2023.assets\image-20230716204429598.png)
+  ![image-20230716204429598](NeRFs-ICCV2023.assets/image-20230716204429598.png)
 
 
 -----
@@ -25,8 +25,8 @@
 - Abstract:
 > *Neural Radiance Fields (NeRF) have constituted a remarkable breakthrough in image-based 3D reconstruction. However, their implicit volumetric representations differ significantly from the widely-adopted polygonal meshes and lack support from common 3D software and hardware, making their rendering and manipulation inefficient. To overcome this limitation, we present a novel framework that generates textured surface meshes from images. Our approach begins by efficiently initializing the geometry and view-dependency decomposed appearance with a NeRF. Subsequently, a coarse mesh is extracted, and an iterative surface refining algorithm is developed to adaptively adjust both vertex positions and face density based on re-projected rendering errors. We jointly refine the appearance with geometry and bake it into texture images for real-time rendering. Extensive experiments demonstrate that our method achieves superior mesh quality and competitive rendering quality.* 
 - Figure: 
-  ![image-20230716204836030](E:\ResearchFields\NeRFs-CVPR2023\NeRFs-ICCV2023.assets\image-20230716204836030.png)
-  ![image-20230716204902160](E:\ResearchFields\NeRFs-CVPR2023\NeRFs-ICCV2023.assets\image-20230716204902160.png)
+  ![image-20230716204836030](NeRFs-ICCV2023.assets/image-20230716204836030.png)
+  ![image-20230716204902160](NeRFs-ICCV2023.assets/image-20230716204902160.png)
 
 
 -----
@@ -36,10 +36,10 @@
 - Code: https://github.com/zju3dv/IntrinsicNeRF
 - Paper: https://arxiv.org/pdf/2210.00647.pdf
 - Abstract:
-> *Existing inverse rendering combined with neural rendering methods~\cite{zhang2021physg, zhang2022modeling} can only perform editable novel view synthesis on object-specific scenes, while we present intrinsic neural radiance fields, dubbed IntrinsicNeRF, which introduce intrinsic decomposition into the NeRF-based~\cite{mildenhall2020nerf} neural rendering method and can extend its application to room-scale scenes. Since intrinsic decomposition is a fundamentally under-constrained inverse problem, we propose a novel distance-aware point sampling and adaptive reflectance iterative clustering optimization method, which enables IntrinsicNeRF with traditional intrinsic decomposition constraints to be trained in an unsupervised manner, resulting in temporally consistent intrinsic decomposition results. To cope with the problem that different adjacent instances of similar reflectance in a scene are incorrectly clustered together, we further propose a hierarchical clustering method with coarse-to-fine optimization to obtain a fast hierarchical indexing representation. It supports compelling real-time augmented applications such as recoloring and illumination variation. Extensive experiments and editing samples on both object-specific/room-scale scenes and synthetic/real-word data demonstrate that we can obtain consistent intrinsic decomposition results and high-fidelity novel view synthesis even for challenging sequences. Project page: [this https URL](https://zju3dv.github.io/intrinsic_nerf).* 
+> *Existing inverse rendering combined with neural rendering methods~/cite{zhang2021physg, zhang2022modeling} can only perform editable novel view synthesis on object-specific scenes, while we present intrinsic neural radiance fields, dubbed IntrinsicNeRF, which introduce intrinsic decomposition into the NeRF-based~/cite{mildenhall2020nerf} neural rendering method and can extend its application to room-scale scenes. Since intrinsic decomposition is a fundamentally under-constrained inverse problem, we propose a novel distance-aware point sampling and adaptive reflectance iterative clustering optimization method, which enables IntrinsicNeRF with traditional intrinsic decomposition constraints to be trained in an unsupervised manner, resulting in temporally consistent intrinsic decomposition results. To cope with the problem that different adjacent instances of similar reflectance in a scene are incorrectly clustered together, we further propose a hierarchical clustering method with coarse-to-fine optimization to obtain a fast hierarchical indexing representation. It supports compelling real-time augmented applications such as recoloring and illumination variation. Extensive experiments and editing samples on both object-specific/room-scale scenes and synthetic/real-word data demonstrate that we can obtain consistent intrinsic decomposition results and high-fidelity novel view synthesis even for challenging sequences. Project page: [this https URL](https://zju3dv.github.io/intrinsic_nerf).* 
 - Figure: 
-  ![image-20230716205328607](E:\ResearchFields\NeRFs-CVPR2023\NeRFs-ICCV2023.assets\image-20230716205328607.png)
-  ![image-20230716205418023](E:\ResearchFields\NeRFs-CVPR2023\NeRFs-ICCV2023.assets\image-20230716205418023.png)
+  ![image-20230716205328607](NeRFs-ICCV2023.assets/image-20230716205328607.png)
+  ![image-20230716205418023](NeRFs-ICCV2023.assets/image-20230716205418023.png)
 
 
 -----
@@ -51,8 +51,8 @@
 - Abstract:
 > *We present DreamBooth3D, an approach to personalize text-to-3D generative models from as few as 3-6 casually captured images of a subject. Our approach combines recent advances in personalizing text-to-image models (DreamBooth) with text-to-3D generation (DreamFusion). We find that naively combining these methods fails to yield satisfactory subject-specific 3D assets due to personalized text-to-image models overfitting to the input viewpoints of the subject. We overcome this through a 3-stage optimization strategy where we jointly leverage the 3D consistency of neural radiance fields together with the personalization capability of text-to-image models. Our method can produce high-quality, subject-specific 3D assets with text-driven modifications such as novel poses, colors and attributes that are not seen in any of the input images of the subject.* 
 - Figure: 
-  ![image-20230716210037034](E:\ResearchFields\NeRFs-CVPR2023\NeRFs-ICCV2023.assets\image-20230716210037034.png)
-  ![image-20230716210104710](E:\ResearchFields\NeRFs-CVPR2023\NeRFs-ICCV2023.assets\image-20230716210104710.png)
+  ![image-20230716210037034](NeRFs-ICCV2023.assets/image-20230716210037034.png)
+  ![image-20230716210104710](NeRFs-ICCV2023.assets/image-20230716210104710.png)
 
 
 
