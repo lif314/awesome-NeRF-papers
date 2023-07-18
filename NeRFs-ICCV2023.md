@@ -1,6 +1,6 @@
 # NeRFs-ICCV2023
 
-- #Papers: 4
+- #Papers: 7
 
 
 
@@ -57,38 +57,42 @@
 
 
 -----
-[5] 
-- Category：
-- Project: 
-- Code: 
-- Paper: 
+[5] Tetra-NeRF: Representing Neural Radiance Fields Using Tetrahedra
+- Category：Point-Based, Tetrahedra-Based
+- Project: https://jkulhanek.com/tetra-nerf/
+- Code: https://github.com/jkulhanek/tetra-nerf/
+- Paper: https://arxiv.org/pdf/2304.09987.pdf
 - Abstract:
-> ** 
+> *Neural Radiance Fields (NeRFs) are a very recent and very popular approach for the problems of novel view synthesis and 3D reconstruction. A popular scene representation used by NeRFs is to combine a uniform, voxel-based subdivision of the scene with an MLP. Based on the observation that a (sparse) point cloud of the scene is often available, this paper proposes to use an adaptive representation based on tetrahedra obtained by the Delaunay triangulation instead of the uniform subdivision or point-based representations. We show that such a representation enables efficient training and leads to state-of-the-art results. Our approach elegantly combines concepts from 3D geometry processing, triangle-based rendering, and modern neural radiance fields. Compared to voxel-based representations, ours provides more detail around parts of the scene likely to be close to the surface. Compared to point-based representations, our approach achieves better performance.* 
 - Figure: 
+  ![image-20230716212940319](NeRFs-ICCV2023.assets/image-20230716212940319.png)
 
 
 
 -----
-[6] 
-- Category：
-- Project: 
-- Code: 
-- Paper: 
+[6] SparseNeRF: Distilling Depth Ranking for Few-shot Novel View Synthesis
+- Category：depth-based, Few-shot
+- Project: https://sparsenerf.github.io/
+- Code: https://github.com/Wanggcong/SparseNeRF
+- Paper: https://arxiv.org/pdf/2303.16196.pdf
 - Abstract:
-> ** 
+> *Neural Radiance Field (NeRF) significantly degrades when only a limited number of views are available. To complement the lack of 3D information, depth-based models, such as DSNeRF and MonoSDF, explicitly assume the availability of accurate depth maps of multiple views. They linearly scale the accurate depth maps as supervision to guide the predicted depth of few-shot NeRFs. However, accurate depth maps are difficult and expensive to capture due to wide-range depth distances in the wild.
+> In this work, we present a new Sparse-view NeRF (SparseNeRF) framework that exploits depth priors from real-world inaccurate observations. The inaccurate depth observations are either from pre-trained depth models or coarse depth maps of consumer-level depth sensors. Since coarse depth maps are not strictly scaled to the ground-truth depth maps, we propose a simple yet effective constraint, a local depth ranking method, on NeRFs such that the expected depth ranking of the NeRF is consistent with that of the coarse depth maps in local patches. To preserve the spatial continuity of the estimated depth of NeRF, we further propose a spatial continuity constraint to encourage the consistency of the expected depth continuity of NeRF with coarse depth maps. Surprisingly, with simple depth ranking constraints, SparseNeRF outperforms all state-of-the-art few-shot NeRF methods (including depth-based models) on standard LLFF and DTU datasets. Moreover, we collect a new dataset NVS-RGBD that contains real-world depth maps from Azure Kinect, ZED 2, and iPhone 13 Pro. Extensive experiments on NVS-RGBD dataset also validate the superiority and generalizability of SparseNeRF. Project page is available at [this https URL](https://sparsenerf.github.io/).* 
 - Figure: 
+  ![image-20230718132244589](NeRFs-ICCV2023.assets/image-20230718132244589.png)![image-20230718132308974](NeRFs-ICCV2023.assets/image-20230718132308974.png)
 
 
 
 -----
-[7] 
-- Category：
-- Project: 
-- Code: 
-- Paper: 
+[7] SHERF: Generalizable Human NeRF from a Single Image
+- Category：3D Human
+- Project: https://skhu101.github.io/SHERF/
+- Code: https://github.com/skhu101/SHERF
+- Paper: https://arxiv.org/pdf/2303.12791.pdf
 - Abstract:
-> ** 
+> *Existing Human NeRF methods for reconstructing 3D humans typically rely on multiple 2D images from multi-view cameras or monocular videos captured from fixed camera views. However, in real-world scenarios, human images are often captured from random camera angles, presenting challenges for high-quality 3D human reconstruction. In this paper, we propose SHERF, the first generalizable Human NeRF model for recovering animatable 3D humans from a single input image. SHERF extracts and encodes 3D human representations in canonical space, enabling rendering and animation from free views and poses. To achieve high-fidelity novel view and pose synthesis, the encoded 3D human representations should capture both global appearance and local fine-grained textures. To this end, we propose a bank of 3D-aware hierarchical features, including global, point-level, and pixel-aligned features, to facilitate informative encoding. Global features enhance the information extracted from the single input image and complement the information missing from the partial 2D observation. Point-level features provide strong clues of 3D human structure, while pixel-aligned features preserve more fine-grained details. To effectively integrate the 3D-aware hierarchical feature bank, we design a feature fusion transformer. Extensive experiments on THuman, RenderPeople, ZJU_MoCap, and HuMMan datasets demonstrate that SHERF achieves state-of-the-art performance, with better generalizability for novel view and pose synthesis.* 
 - Figure: 
+  ![image-20230718132630788](NeRFs-ICCV2023.assets/image-20230718132630788.png)![image-20230718132657402](NeRFs-ICCV2023.assets/image-20230718132657402.png)
 
 
 
