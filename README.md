@@ -6,11 +6,11 @@
 
 ## [NeRFs-ICLR2023: 15 :computer_mouse:  ](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-ICLR.md)
 
-## [NeRFs-ICCV2023: 7+?:computer_mouse:  ](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-ICCV2023.md)
+## [NeRFs-ICCV2023: 13+?:computer_mouse:  ](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-ICCV2023.md)
 
 
 
-- NeRF on CVPR: 
+- NeRF at CVPR: 
 
   - [NeRFs-CVPR2021: 7](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-CVPR2021.md)
   - [NeRFs-CVPR2022: 37](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-CVPR2022.md)
@@ -18,35 +18,31 @@
 
   ![nerf-cvpr](NeRFs-CVPR2023.assets/nerf_cvpr.png)
 
-- NeRF on NIPS：[NeRFs-NIPS: 17](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-NIPS.md)
+- NeRF at NIPS：[NeRFs-NIPS: 17](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-NIPS.md)
 
-- NeRF on ICML: [NeRFs-ICML: 3](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-ICML.md)
+- NeRF at ICML: [NeRFs-ICML: 3](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-ICML.md)
 
-- NeRF on ICLR: [NeRFs-ICLR: 17](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-ICLR.md)
+- NeRF at ICLR: [NeRFs-ICLR: 17](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-ICLR.md)
 
-- NeRF on ICCV: 
+- NeRF at ICCV: 
 
   - [NeRFs-ICCV2021: 23](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-ICCV2021.md)
 
   - [NeRFs-ICCV2023: ?](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-ICCV2023.md)
 
-- NeRF on ECCV: 
+- NeRF at ECCV: 
 
   - [NeRFs-ECCV2022: 28](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRFs-ECCV2022.md)
   - [NeRFs-ECCV2020: 1(开山之作)](https://github.com/lif314/NeRFs-CVPR2023/blob/main/NeRF-ECCV2020.md)
 
-- Recommended repos:
+- Awesome summaries:
 
-  - [awesome-NeRF](https://github.com/awesome-NeRF/awesome-NeRF/)
-
-  - [CVPR2023-Papers-with-Code](https://github.com/amusi/CVPR2023-Papers-with-Code)
-
-- [2023年顶会 accepted papers list](https://blog.csdn.net/lijinde07/article/details/128024833)
-
-- [2022年顶会 accepted papers list](https://blog.csdn.net/lijinde07/article/details/122651155)
-
-- [2021年顶会 accepted papers list](https://blog.csdn.net/lijinde07/article/details/112171466)
-
+  - [NeRF Explosion 2020](https://dellaert.github.io/NeRF/)
+  - [NeRF at ICCV 2021](https://dellaert.github.io/NeRF21/)
+  - [NeRF at CVPR 2022](https://dellaert.github.io/NeRF22/)
+  - [NeRF at NeurIPS 2022](https://markboss.me/post/nerf_at_neurips22/)
+  - [NeRF at ECCV 2022](https://markboss.me/post/nerf_at_eccv22/)
+  - [NeRF at CVPR 2023](https://markboss.me/post/nerf_at_cvpr23/)
 
 
 

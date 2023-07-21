@@ -1,6 +1,6 @@
 # NeRFs-ICCV2023
 
-- #Papers: 7
+- #Papers: 13
 
 
 
@@ -97,74 +97,87 @@
 
 
 -----
-[8] 
-- Category：
-- Project: 
-- Code: 
-- Paper: 
+[8] Make-It-3D: High-Fidelity 3D Creation from A Single Image with Diffusion Prior
+
+- Category：3D Creation, NeRF-Diffusion
+- Project: https://make-it-3d.github.io/
+- Code: https://github.com/junshutang/Make-It-3D
+- Paper: https://arxiv.org/pdf/2303.14184.pdf
 - Abstract:
-> ** 
+> *In this work, we investigate the problem of creating high-fidelity 3D content from only a single image. This is inherently challenging: it essentially involves estimating the underlying 3D geometry while simultaneously hallucinating unseen textures. To address this challenge, we leverage prior knowledge from a well-trained 2D diffusion model to act as 3D-aware supervision for 3D creation. Our approach, Make-It-3D, employs a two-stage optimization pipeline: the first stage optimizes a neural radiance field by incorporating constraints from the reference image at the frontal view and diffusion prior at novel views; the second stage transforms the coarse model into textured point clouds and further elevates the realism with diffusion prior while leveraging the high-quality textures from the reference image. Extensive experiments demonstrate that our method outperforms prior works by a large margin, resulting in faithful reconstructions and impressive visual quality. Our method presents the first attempt to achieve high-quality 3D creation from a single image for general objects and enables various applications such as text-to-3D creation and texture editing.* 
 - Figure: 
+  ![image-20230721154240966](NeRFs-ICCV2023.assets/image-20230721154240966.png)![image-20230721154258621](NeRFs-ICCV2023.assets/image-20230721154258621.png)
 
 
 -----
-[9] 
-- Category：
-- Project: 
-- Code: 
-- Paper: 
+[9] Neural Haircut: Prior-Guided Strand-Based Hair Reconstruction
+
+- Category：Hair Reconstruction, NeRF-Diffusion
+- Project: https://samsunglabs.github.io/NeuralHaircut/
+- Code: https://github.com/SamsungLabs/NeuralHaircut
+- Paper: https://arxiv.org/pdf/2306.05872.pdf
 - Abstract:
-> ** 
+> *Generating realistic human 3D reconstructions using image or video data is essential for various communication and entertainment applications. While existing methods achieved impressive results for body and facial regions, realistic hair modeling still remains challenging due to its high mechanical complexity. This work proposes an approach capable of accurate hair geometry reconstruction at a strand level from a monocular video or multi-view images captured in uncontrolled lighting conditions. Our method has two stages, with the first stage performing joint reconstruction of coarse hair and bust shapes and hair orientation using implicit volumetric representations. The second stage then estimates a strand-level hair reconstruction by reconciling in a single optimization process the coarse volumetric constraints with hair strand and hairstyle priors learned from the synthetic data. To further increase the reconstruction fidelity, we incorporate image-based losses into the fitting process using a new differentiable renderer. The combined system, named Neural Haircut, achieves high realism and personalization of the reconstructed hairstyles.* 
 - Figure: 
-
-
-
------
-[10] 
-- Category：
-- Project: 
-- Code: 
-- Paper: 
-- Abstract:
-> ** 
-- Figure: 
+  ![image-20230721155020970](NeRFs-ICCV2023.assets/image-20230721155020970.png)![image-20230721155043873](NeRFs-ICCV2023.assets/image-20230721155043873.png)
 
 
 
 -----
-[11] 
-- Category：
-- Project: 
-- Code: 
-- Paper: 
+[10] Urban Radiance Field Representation with Deformable Neural Mesh Primitives
+
+- Category：Urban Reconstruction
+- Project: https://dnmp.github.io/
+- Code: https://github.com/DNMP/DNMP
+- Paper: https://arxiv.org/pdf/2307.10776.pdf
 - Abstract:
-> ** 
+> *Neural Radiance Fields (NeRFs) have achieved great success in the past few years. However, most current methods still require intensive resources due to ray marching-based rendering. To construct urban-level radiance fields efficiently, we design Deformable Neural Mesh Primitive~(DNMP), and propose to parameterize the entire scene with such primitives. The DNMP is a flexible and compact neural variant of classic mesh representation, which enjoys both the efficiency of rasterization-based rendering and the powerful neural representation capability for photo-realistic image synthesis. Specifically, a DNMP consists of a set of connected deformable mesh vertices with paired vertex features to parameterize the geometry and radiance information of a local area. To constrain the degree of freedom for optimization and lower the storage budgets, we enforce the shape of each primitive to be decoded from a relatively low-dimensional latent space. The rendering colors are decoded from the vertex features (interpolated with rasterization) by a view-dependent MLP. The DNMP provides a new paradigm for urban-level scene representation with appealing properties: (1) High-quality rendering. Our method achieves leading performance for novel view synthesis in urban scenarios. (2) Low computational costs. Our representation enables fast rendering (2.07ms/1k pixels) and low peak memory usage (110MB/1k pixels). We also present a lightweight version that can run 33× faster than vanilla NeRFs, and comparable to the highly-optimized Instant-NGP (0.61 vs 0.71ms/1k pixels). Project page: \href{[this https URL](https://dnmp.github.io/)}{[this https URL](https://dnmp.github.io/)}.* 
 - Figure: 
+  ![image-20230721155944962](NeRFs-ICCV2023.assets/image-20230721155944962.png)![image-20230721160013918](NeRFs-ICCV2023.assets/image-20230721160013918.png)
 
 
 
 -----
-[12] 
-- Category：
-- Project: 
-- Code: 
-- Paper: 
+[11] SKED: Sketch-guided Text-based 3D Editing
+
+- Category：Text-to-3D Editing
+- Project: https://sked-paper.github.io/
+- Code: coming soon!
+- Paper: https://arxiv.org/pdf/2303.10735v3.pdf
 - Abstract:
-> ** 
+> *Text-to-image diffusion models are gradually introduced into computer graphics, recently enabling the development of Text-to-3D pipelines in an open domain. However, for interactive editing purposes, local manipulations of content through a simplistic textual interface can be arduous. Incorporating user guided sketches with Text-to-image pipelines offers users more intuitive control. Still, as state-of-the-art Text-to-3D pipelines rely on optimizing Neural Radiance Fields (NeRF) through gradients from arbitrary rendering views, conditioning on sketches is not straightforward. In this paper, we present SKED, a technique for editing 3D shapes represented by NeRFs. Our technique utilizes as few as two guiding sketches from different views to alter an existing neural field. The edited region respects the prompt semantics through a pre-trained diffusion model. To ensure the generated output adheres to the provided sketches, we propose novel loss functions to generate the desired edits while preserving the density and radiance of the base instance. We demonstrate the effectiveness of our proposed method through several qualitative and quantitative experiments.* 
 - Figure: 
+  ![image-20230721160617078](NeRFs-ICCV2023.assets/image-20230721160617078.png)![image-20230721160634958](NeRFs-ICCV2023.assets/image-20230721160634958.png)
+
+
+
+-----
+[12] Lighting up NeRF via Unsupervised Decomposition and Enhancement
+
+- Category：Low Light
+- Project: https://www.whyy.site/paper/llnerf
+- Code: https://github.com/onpix/LLNeRF
+- Paper: https://arxiv.org/pdf/2307.10664.pdf
+- Abstract:
+> *Neural Radiance Field (NeRF) is a promising approach for synthesizing novel views, given a set of images and the corresponding camera poses of a scene. However, images photographed from a low-light scene can hardly be used to train a NeRF model to produce high-quality results, due to their low pixel intensities, heavy noise, and color distortion. Combining existing low-light image enhancement methods with NeRF methods also does not work well due to the view inconsistency caused by the individual 2D enhancement process. In this paper, we propose a novel approach, called Low-Light NeRF (or LLNeRF), to enhance the scene representation and synthesize normal-light novel views directly from sRGB low-light images in an unsupervised manner. The core of our approach is a decomposition of radiance field learning, which allows us to enhance the illumination, reduce noise and correct the distorted colors jointly with the NeRF optimization process. Our method is able to produce novel view images with proper lighting and vivid colors and details, given a collection of camera-finished low dynamic range (8-bits/channel) images from a low-light scene. Experiments demonstrate that our method outperforms existing low-light enhancement methods and NeRF methods.* 
+- Figure: 
+  ![image-20230721161239397](NeRFs-ICCV2023.assets/image-20230721161239397.png)
+  ![image-20230721161332104](NeRFs-ICCV2023.assets/image-20230721161332104.png)
 
 
 
 
 -----
-[13] 
-- Category：
-- Project: 
-- Code: 
-- Paper: 
+[13] Efficient Region-Aware Neural Radiance Fields for High-Fidelity Talking Portrait Synthesis
+
+- Category：Audio Driven
+- Project: none
+- Code: https://github.com/Fictionarry/ER-NeRF
+- Paper: https://arxiv.org/pdf/2307.09323.pdf
 - Abstract:
-> ** 
+> *This paper presents ER-NeRF, a novel conditional Neural Radiance Fields (NeRF) based architecture for talking portrait synthesis that can concurrently achieve fast convergence, real-time rendering, and state-of-the-art performance with small model size. Our idea is to explicitly exploit the unequal contribution of spatial regions to guide talking portrait modeling. Specifically, to improve the accuracy of dynamic head reconstruction, a compact and expressive NeRF-based Tri-Plane Hash Representation is introduced by pruning empty spatial regions with three planar hash encoders. For speech audio, we propose a Region Attention Module to generate region-aware condition feature via an attention mechanism. Different from existing methods that utilize an MLP-based encoder to learn the cross-modal relation implicitly, the attention mechanism builds an explicit connection between audio features and spatial regions to capture the priors of local motions. Moreover, a direct and fast Adaptive Pose Encoding is introduced to optimize the head-torso separation problem by mapping the complex transformation of the head pose into spatial coordinates. Extensive experiments demonstrate that our method renders better high-fidelity and audio-lips synchronized talking portrait videos, with realistic details and high efficiency compared to previous methods.* 
 - Figure: 
+  ![image-20230721161820161](NeRFs-ICCV2023.assets/image-20230721161820161.png)![image-20230721161838685](NeRFs-ICCV2023.assets/image-20230721161838685.png)
 
 
 
