@@ -1,6 +1,6 @@
 # NeRFs-ICCV2023
 
-- #Papers: 13
+- #Papers: 15
 
 
 
@@ -98,7 +98,6 @@
 
 -----
 [8] Make-It-3D: High-Fidelity 3D Creation from A Single Image with Diffusion Prior
-
 - Category：3D Creation, NeRF-Diffusion
 - Project: https://make-it-3d.github.io/
 - Code: https://github.com/junshutang/Make-It-3D
@@ -111,7 +110,6 @@
 
 -----
 [9] Neural Haircut: Prior-Guided Strand-Based Hair Reconstruction
-
 - Category：Hair Reconstruction, NeRF-Diffusion
 - Project: https://samsunglabs.github.io/NeuralHaircut/
 - Code: https://github.com/SamsungLabs/NeuralHaircut
@@ -125,7 +123,6 @@
 
 -----
 [10] Urban Radiance Field Representation with Deformable Neural Mesh Primitives
-
 - Category：Urban Reconstruction
 - Project: https://dnmp.github.io/
 - Code: https://github.com/DNMP/DNMP
@@ -139,7 +136,6 @@
 
 -----
 [11] SKED: Sketch-guided Text-based 3D Editing
-
 - Category：Text-to-3D Editing
 - Project: https://sked-paper.github.io/
 - Code: coming soon!
@@ -153,7 +149,6 @@
 
 -----
 [12] Lighting up NeRF via Unsupervised Decomposition and Enhancement
-
 - Category：Low Light
 - Project: https://www.whyy.site/paper/llnerf
 - Code: https://github.com/onpix/LLNeRF
@@ -169,7 +164,6 @@
 
 -----
 [13] Efficient Region-Aware Neural Radiance Fields for High-Fidelity Talking Portrait Synthesis
-
 - Category：Audio Driven
 - Project: none
 - Code: https://github.com/Fictionarry/ER-NeRF
@@ -182,26 +176,28 @@
 
 
 -----
-[14] 
-- Category：
-- Project: 
-- Code: 
-- Paper: 
+[14] Tri-MipRF: Tri-Mip Representation for Efficient Anti-Aliasing Neural Radiance Fields
+- Category：Anti-Aliasing, Faster
+- Project: https://wbhu.github.io/projects/Tri-MipRF/
+- Code: https://github.com/wbhu/Tri-MipRF
+- Paper: https://arxiv.org/pdf/2307.11335.pdf
 - Abstract:
-> ** 
+> *Despite the tremendous progress in neural radiance fields (NeRF), we still face a dilemma of the trade-off between quality and efficiency, e.g., MipNeRF presents fine-detailed and anti-aliased renderings but takes days for training, while Instant-ngp can accomplish the reconstruction in a few minutes but suffers from blurring or aliasing when rendering at various distances or resolutions due to ignoring the sampling area. To this end, we propose a novel Tri-Mip encoding that enables both instant reconstruction and anti-aliased high-fidelity rendering for neural radiance fields. The key is to factorize the pre-filtered 3D feature spaces in three orthogonal mipmaps. In this way, we can efficiently perform 3D area sampling by taking advantage of 2D pre-filtered feature maps, which significantly elevates the rendering quality without sacrificing efficiency. To cope with the novel Tri-Mip representation, we propose a cone-casting rendering technique to efficiently sample anti-aliased 3D features with the Tri-Mip encoding considering both pixel imaging and observing distance. Extensive experiments on both synthetic and real-world datasets demonstrate our method achieves state-of-the-art rendering quality and reconstruction speed while maintaining a compact representation that reduces 25% model size compared against Instant-ngp.* 
 - Figure: 
+  ![image-20230725103358059](NeRFs-ICCV2023.assets/image-20230725103358059.png)![image-20230725103437978](NeRFs-ICCV2023.assets/image-20230725103437978.png)
 
 
 
 -----
-[15] 
-- Category：
-- Project: 
-- Code: 
-- Paper: 
+[15] AvatarCraft: Transforming Text into Neural Human Avatars with Parameterized Shape and Pose Control
+- Category：Text-to-Avatars
+- Project: https://avatar-craft.github.io/
+- Code: https://github.com/songrise/AvatarCraft
+- Paper: https://arxiv.org/pdf/2303.17606.pdf
 - Abstract:
-> ** 
+> *Neural implicit fields are powerful for representing 3D scenes and generating high-quality novel views, but it remains challenging to use such implicit representations for creating a 3D human avatar with a specific identity and artistic style that can be easily animated. Our proposed method, AvatarCraft, addresses this challenge by using diffusion models to guide the learning of geometry and texture for a neural avatar based on a single text prompt. We carefully design the optimization framework of neural implicit fields, including a coarse-to-fine multi-bounding box training strategy, shape regularization, and diffusion-based constraints, to produce high-quality geometry and texture. Additionally, we make the human avatar animatable by deforming the neural implicit field with an explicit warping field that maps the target human mesh to a template human mesh, both represented using parametric human models. This simplifies animation and reshaping of the generated avatar by controlling pose and shape parameters. Extensive experiments on various text descriptions show that AvatarCraft is effective and robust in creating human avatars and rendering novel views, poses, and shapes. Our project page is: \url{[this https URL](https://avatar-craft.github.io/)}.* 
 - Figure: 
+  ![image-20230725104001330](NeRFs-ICCV2023.assets/image-20230725104001330.png)![image-20230725104022507](NeRFs-ICCV2023.assets/image-20230725104022507.png)
 
 
 
