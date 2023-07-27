@@ -1,6 +1,6 @@
 # NeRFs-ICCV2023
 
-- #Papers: 15
+- #Papers: 16
 
 
 
@@ -202,7 +202,259 @@
 
 
 -----
-[16] 
+[16] Mixed Neural Voxels for Fast Multi-view Video Synthesis
+- Category：Dynamic
+- Project: https://fengres.github.io/mixvoxels/
+- Code: https://github.com/fengres/mixvoxels
+- Paper: https://arxiv.org/pdf/2212.00190.pdf
+- Abstract:
+> *Synthesizing high-fidelity videos from real-world multi-view input is challenging because of the complexities of real-world environments and highly dynamic motions. Previous works based on neural radiance fields have demonstrated high-quality reconstructions of dynamic scenes. However, training such models on real-world scenes is time-consuming, usually taking days or weeks. In this paper, we present a novel method named MixVoxels to better represent the dynamic scenes with fast training speed and competitive rendering qualities. The proposed MixVoxels represents the 4D dynamic scenes as a mixture of static and dynamic voxels and processes them with different networks. In this way, the computation of the required modalities for static voxels can be processed by a lightweight model, which essentially reduces the amount of computation, especially for many daily dynamic scenes dominated by the static background. To separate the two kinds of voxels, we propose a novel variation field to estimate the temporal variance of each voxel. For the dynamic voxels, we design an inner-product time query method to efficiently query multiple time steps, which is essential to recover the high-dynamic motions. As a result, with 15 minutes of training for dynamic scenes with inputs of 300-frame videos, MixVoxels achieves better PSNR than previous methods. Codes and trained models are available at [this https URL](https://github.com/fengres/mixvoxels)* 
+- Figure: 
+  ![image-20230725122039750](NeRFs-ICCV2023.assets/image-20230725122039750.png)
+
+
+-----
+[] 
+- Category：
+- Project: 
+- Code: 
+- Paper: 
+- Abstract:
+> ** 
+- Figure: 
+
+
+
+-----
+[] 
+- Category：
+- Project: 
+- Code: 
+- Paper: 
+- Abstract:
+> ** 
+- Figure: 
+
+
+-----
+[] 
+- Category：
+- Project: 
+- Code: 
+- Paper: 
+- Abstract:
+> ** 
+- Figure: 
+
+
+
+-----
+[] 
+- Category：
+- Project: 
+- Code: 
+- Paper: 
+- Abstract:
+> ** 
+- Figure: 
+
+
+
+-----
+[] 
+- Category：
+- Project: 
+- Code: 
+- Paper: 
+- Abstract:
+> ** 
+- Figure: 
+
+
+
+-----
+[] 
+- Category：
+- Project: 
+- Code: 
+- Paper: 
+- Abstract:
+> ** 
+- Figure: 
+
+
+-----
+[] 
+- Category：
+- Project: 
+- Code: 
+- Paper: 
+- Abstract:
+> ** 
+- Figure: 
+
+
+-----
+[] 
+- Category：
+- Project: 
+- Code: 
+- Paper: 
+- Abstract:
+> ** 
+- Figure: 
+
+
+-----
+[] 
+- Category：
+- Project: 
+- Code: 
+- Paper: 
+- Abstract:
+> ** 
+- Figure: 
+
+
+-----
+[] 
+- Category：
+- Project: 
+- Code: 
+- Paper: 
+- Abstract:
+> ** 
+- Figure: 
+
+
+
+-----
+[] 
+- Category：
+- Project: 
+- Code: 
+- Paper: 
+- Abstract:
+> ** 
+- Figure: 
+
+
+
+-----
+[] 
+- Category：
+- Project: 
+- Code: 
+- Paper: 
+- Abstract:
+> ** 
+- Figure: 
+
+
+
+-----
+[] 
+- Category：
+- Project: 
+- Code: 
+- Paper: 
+- Abstract:
+> ** 
+- Figure: 
+
+
+
+-----
+[] 
+- Category：
+- Project: 
+- Code: 
+- Paper: 
+- Abstract:
+> ** 
+- Figure: 
+
+
+-----
+[] 
+- Category：
+- Project: 
+- Code: 
+- Paper: 
+- Abstract:
+> ** 
+- Figure: 
+
+
+-----
+[] 
+- Category：
+- Project: 
+- Code: 
+- Paper: 
+- Abstract:
+> ** 
+- Figure: 
+
+
+-----
+[] 
+- Category：
+- Project: 
+- Code: 
+- Paper: 
+- Abstract:
+> ** 
+- Figure: 
+
+
+-----
+[] 
+- Category：
+- Project: 
+- Code: 
+- Paper: 
+- Abstract:
+> ** 
+- Figure: 
+
+
+-----
+[] 
+- Category：
+- Project: 
+- Code: 
+- Paper: 
+- Abstract:
+> ** 
+- Figure: 
+
+
+
+-----
+[] 
+- Category：
+- Project: 
+- Code: 
+- Paper: 
+- Abstract:
+> ** 
+- Figure: 
+
+
+-----
+[] 
+- Category：
+- Project: 
+- Code: 
+- Paper: 
+- Abstract:
+> ** 
+- Figure: 
+
+
+-----
+[] 
 - Category：
 - Project: 
 - Code: 
