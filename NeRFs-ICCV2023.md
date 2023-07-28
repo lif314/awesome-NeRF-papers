@@ -1,6 +1,6 @@
 # NeRFs-ICCV2023
 
-- #Papers: 16
+- #Papers: 17
 
 
 
@@ -214,14 +214,15 @@
 
 
 -----
-[] 
-- Category：
-- Project: 
-- Code: 
-- Paper: 
+[17] NeRF-Det: Learning Geometry-Aware Volumetric Representation for Multi-View 3D Object Detection
+- Category：3D Object Detection
+- Project: https://chenfengxu714.github.io/nerfdet/
+- Code: https://github.com/facebookresearch/NeRF-Det
+- Paper: https://arxiv.org/pdf/2307.14620.pdf
 - Abstract:
-> ** 
+> *We present NeRF-Det, a novel method for indoor 3D detection with posed RGB images as input. Unlike existing indoor 3D detection methods that struggle to model scene geometry, our method makes novel use of NeRF in an end-to-end manner to explicitly estimate 3D geometry, thereby improving 3D detection performance. Specifically, to avoid the significant extra latency associated with per-scene optimization of NeRF, we introduce sufficient geometry priors to enhance the generalizability of NeRF-MLP. Furthermore, we subtly connect the detection and NeRF branches through a shared MLP, enabling an efficient adaptation of NeRF to detection and yielding geometry-aware volumetric representations for 3D detection. Our method outperforms state-of-the-arts by 3.9 mAP and 3.1 mAP on the ScanNet and ARKITScenes benchmarks, respectively. We provide extensive analysis to shed light on how NeRF-Det works. As a result of our joint-training design, NeRF-Det is able to generalize well to unseen scenes for object detection, view synthesis, and depth estimation tasks without requiring per-scene optimization. Code is available at \url{[this https URL](https://github.com/facebookresearch/NeRF-Det)}.* 
 - Figure: 
+  ![image-20230728143949637](NeRFs-ICCV2023.assets/image-20230728143949637.png)![image-20230728144012845](NeRFs-ICCV2023.assets/image-20230728144012845.png)
 
 
 
