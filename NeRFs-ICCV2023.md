@@ -1,6 +1,6 @@
 # NeRFs-ICCV2023
 
-- #Papers: 17
+- #Papers: 18
 
 
 
@@ -227,14 +227,15 @@
 
 
 -----
-[] 
-- Category：
-- Project: 
-- Code: 
-- Paper: 
+[18] SceneRF: Self-Supervised Monocular 3D Scene Reconstruction with Radiance Fields
+- Category：Urban Reconstruction
+- Project: https://astra-vision.github.io/SceneRF/
+- Code: https://github.com/astra-vision/SceneRF
+- Paper: https://arxiv.org/pdf/2212.02501.pdf
 - Abstract:
-> ** 
+> *3D reconstruction from 2D image was extensively studied, training with depth supervision. To relax the dependence to costly-acquired datasets, we propose SceneRF, a self-supervised monocular scene reconstruction method using only posed image sequences for training. Fueled by the recent progress in neural radiance fields (NeRF) we optimize a radiance field though with explicit depth optimization and a novel probabilistic sampling strategy to efficiently handle large scenes. At inference, a single input image suffices to hallucinate novel depth views which are fused together to obtain 3D scene reconstruction. Thorough experiments demonstrate that we outperform all recent baselines for novel depth views synthesis and scene reconstruction, on indoor BundleFusion and outdoor SemanticKITTI. Our code is available at [this https URL](https://astra-vision.github.io/SceneRF).* 
 - Figure: 
+  ![image-20230801211705623](NeRFs-ICCV2023.assets/image-20230801211705623.png)![image-20230801211727012](NeRFs-ICCV2023.assets/image-20230801211727012.png)
 
 
 -----
